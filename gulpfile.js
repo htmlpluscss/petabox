@@ -136,9 +136,9 @@ gulp.task('js', () => {
 
 gulp.task('serve', () => {
 
-	gulp.src([
+//	gulp.src([
 //		'src/js/inputmask.min.js',
-	]).pipe(gulp.dest('build/js'));
+//	]).pipe(gulp.dest('build/js'));
 
 	server.init({
 		server: 'build',
