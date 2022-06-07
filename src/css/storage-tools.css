@@ -1,0 +1,44 @@
+.storage-tools {
+
+	margin: var(--space) 0;
+	scroll-margin: var(--gap);
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: 80px;
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	&__item {
+
+		width: 285px;
+		padding: 32px;
+
+
+		img {
+
+			margin: 0 auto 32px;
+
+		}
+
+		figcaption {
+
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 40px;
+			font-family: 'Outfit';
+			text-align: center;
+
+		}
+
+	}
+
+}

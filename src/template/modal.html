@@ -2,99 +2,11 @@
 
 		<div class="modal__box">
 
-			<div class="modal__item modal__item--video">
-
-				<video src="/video.mp4" controls="controls" preload="none" width="960" height="480" id="modal-video"></video>
-
-			</div>
-
-			<form action="/mail.php" class="form-demo modal__item modal__item--demo">
-
-				<input type="hidden" name="subject" value="Заказать демо">
-
-				<h3 class="modal__title">
-					Заказать демо
-				</h3>
-
-				<div class="modal__fieldset">
-
-					<label class="inputbox">
-
-						<span class="inputbox__label">
-							Имя
-						</span>
-
-						<input class="input" placeholder="Введите Имя" name="name" required="required">
-
-					</label>
-
-					<label class="inputbox">
-
-						<span class="inputbox__label">
-							Телефон
-						</span>
-
-						<input class="input inputmask inputmask--phone" placeholder="+7 (ххх) ххх хх-хх" name="phone" type="tel" required="required">
-
-					</label>
-
-					<label class="inputbox">
-
-						<span class="inputbox__label">
-							E-mail
-						</span>
-
-						<input class="input" placeholder="Введите E-mail" name="email" type="email" required="required">
-
-					</label>
-
-					<div class="modal__checkbox checkbox">
-
-						<label class="checkbox__control">
-
-							<input class="checkbox__input" type="checkbox" required="required">
-
-							<span class="checkbox__label">
-								Я согласен с <a href="/" target="_blank">политикой конфиденциальности</a>
-							</span>
-
-						</label>
-
-					</div>
-
-				</div>
-
-				<button class="modal__submit btn form-demo__submit">
-					<span>Заказать демо</span>
-				</button>
-
-			</form>
-
 			<div class="modal__item modal__item--ok">
 
-				<div class="modal__ico is-green">
-
-					<svg width="68" height="68" viewBox="0 0 68 68">
-						<path stroke-width="3" d="m47.65 14.26 1.16.95-1.16-.95L24.78 42.2l-8.01-6.01a4.33 4.33 0 1 0-5.2 6.93L20.73 50a7.17 7.17 0 0 0 9.84-1.2l23.78-29.06a4.33 4.33 0 1 0-6.7-5.48Z"/>
-					</svg>
-
-				</div>
-
-				<p class="modal__title">
-					Успех!
-				</p>
-
-				<p class="modal__text">
-					Ваша заявка на получение демо-версии продукта успешно отправлена.
-				</p>
-
-				<button type="button" class="modal__close modal__submit btn" aria-label="Закрыть">
-					<span>ОК</span>
-				</button>
-
 			</div>
 
-			<button type="button" class="modal__close modal__close-btn button" aria-label="Закрыть">
+			<button type="button" class="modal__close modal__close-btn button" aria-label="Close">
 				<svg width="24" height="24" viewBox="0 0 24 24">
 					<path stroke-width="2" d="M18 6 6 18M6 6l12 12"/>
 				</svg>

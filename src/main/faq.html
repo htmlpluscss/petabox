@@ -1,0 +1,70 @@
+	<div class="faq" id="faq">
+
+		<div class="center">
+
+			<h2 class="faq__title h2">
+				Frequently Asked Questions
+			</h2>
+
+			<dl class="faq__list accordion">
+
+{% for item in [
+
+	{
+		name : "When was Lottery Token released?"
+	},
+	{
+		name : "How often is the Lottery conducted?"
+	},
+	{
+		name : "What is the minimum to participate in the Lottery?"
+	},
+	{
+		name : "What are the limitations of Petabox Storage?"
+	},
+	{
+		name : "How can I control my Petabox Cloud Storage features through the API / CLI?"
+	},
+	{
+		name : "Does Petabox support versioning of objects?"
+	},
+	{
+		name : "Are there any additional fees for API calls?"
+	},
+	{
+		name : "What is your refund policy?"
+	}
+
+] %}
+
+				<div class="faq__item accordion__item">
+
+					<dt class="faq__head accordion__head accordion__btn">
+						{{ item.name }}
+					</dt>
+
+					<dd class="accordion__body">
+
+						<div class="faq__body">
+
+							<p>
+								Participating in our lottery is incredibly simple! All you need is a valid email address, crypto wallet address, and 500 $CLS tokens.
+							</p>
+
+							<p>
+								These CLS tokens will need to be held in the entered wallet, and must be held for the moment of the lottery draw.
+							</p>
+
+						</div>
+
+					</dd>
+
+				</div>
+
+{% endfor %}
+
+			</dl>
+
+		</div>
+
+	</div>

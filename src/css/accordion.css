@@ -1,0 +1,62 @@
+.accordion {
+
+	position: relative;
+
+	&__body {
+
+		overflow: hidden;
+		position: relative;
+		max-height: 0;
+		opacity: 0;
+		transition: opacity var(--transitionDefault);
+
+	}
+
+	&__item.is-open &__body {
+
+		overflow: visible;
+		max-height: 90000px;
+		opacity: 1;
+
+	}
+
+	&__item.is-open &__btn {
+
+		svg {
+
+			transform: scaleY(-1);
+
+		}
+
+	}
+
+	&__btn {
+
+		cursor: pointer;
+		user-select: none;
+		position: relative;
+
+		@media $desktop {
+
+			&:hover {
+
+				--grey: var(--color);
+
+			}
+
+		}
+
+		svg {
+
+			position: absolute;
+			top: 0;
+			right: 40px;
+			bottom: 0;
+			margin: auto;
+			fill: var(--grey);
+
+		}
+
+	}
+
+}

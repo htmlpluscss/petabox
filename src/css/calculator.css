@@ -1,0 +1,31 @@
+.calculator {
+
+	background-color: #fff;
+	padding: var(--space) 0;
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: 80px;
+
+	}
+
+	&__box {
+
+		height: 740px;
+		box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.06);
+		border-radius: 20px;
+
+	}
+
+	&__note {
+
+		margin: 36px auto 0;
+		max-width: 888px;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+
+	}
+
+}

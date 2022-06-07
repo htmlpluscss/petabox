@@ -2,12 +2,177 @@
 
 	margin: var(--space) 0;
 	scroll-margin: var(--space);
-	outline:1px solid red;
 
 	&__title {
 
 		text-align: center;
 		margin-bottom: 80px;
+		padding-bottom: 36px;
+
+	}
+
+	&__box {
+
+		display: flex;
+		padding: 0px 35px;
+		border-radius: 10px;
+		background-color: #fff;
+		justify-content: space-between;
+
+	}
+
+	&__item {
+
+		padding: 40px;
+		width: 420px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+
+		.btn {
+
+			width: 100%;
+			border-radius: 8px;
+			margin-top: auto;
+
+		}
+
+		&.is-popular {
+
+			left: 4px;
+			color: #fff;
+			position: relative;
+			margin-top: -36px;
+			align-self: flex-start;
+			background-color: var(--blue);
+
+		}
+
+	}
+
+	&__label {
+
+		font-family: 'Outfit';
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 48px;
+		color: var(--blue);
+		padding: 0 30px;
+		margin: -66px auto 14px;
+		background-color: var(--bg);
+		border: 2px solid;
+		border-radius: 20px;
+
+	}
+
+	&__head {
+
+		text-align: center;
+		margin-bottom: 40px;
+
+	}
+
+	&__old {
+
+		font-family: 'Outfit';
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 40px;
+		color: var(--pink);
+		text-align: center;
+
+		.is-popular & {
+
+			color: #fff;
+
+		}
+
+		s {
+
+			margin-right: 4px;
+
+		}
+
+	}
+
+	&__price {
+
+		font-family: 'Outfit';
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 56px;
+		color: var(--blue);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+
+		.is-popular & {
+
+			color: #fff;
+
+		}
+
+	}
+
+	&__time {
+
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 40px;
+		color: var(--grey);
+		margin-left: 10px;
+
+		.is-popular & {
+
+			color: rgba(255, 255, 255, 0.5);
+
+		}
+
+	}
+
+	&__list {
+
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 32px;
+		margin-left: 27px;
+		margin-bottom: 40px;
+
+		li {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%2341A8ED' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			padding-left: 48px;
+
+			.is-popular & {
+
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%23fff' stroke-opacity='.5' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
+
+			}
+
+			& + li {
+
+				margin-top: 12px;
+
+			}
+
+			sup {
+
+				padding: 0 7px;
+				background-color: var(--pink);
+				border-radius: 4px;
+				font-weight: 600;
+				font-size: 10px;
+				line-height: 16px;
+				margin-left: 6px;
+				display: inline-block;
+				vertical-align: top;
+				color: #fff;
+
+			}
+
+		}
 
 	}
 
