@@ -39,8 +39,22 @@ body {
 	position: relative;
 	background-color: var(--bg);
 
+	@media $w1440 {
+
+		font-size: 16px;
+		line-height: 1.5;
+
+	}
+
+	@media $w1024 {
+
+		font-size: 14px;
+		line-height: 1.71;
+
+	}
+
 	background-repeat: no-repeat;
-background-image: url(/css/1.png);
+background-image: url(/css/1024.png);
 background-position: top;
 }
 
@@ -181,6 +195,13 @@ hr {
 		font-size: 18px;
 
 	}
+
+}
+
+.title {
+
+	text-align: center;
+	margin-bottom: 80px;
 
 }
 

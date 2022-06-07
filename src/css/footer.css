@@ -6,21 +6,49 @@
 	padding: 40px 0;
 	border-top: 1px solid var(--border);
 
+	@media $w1440 {
+
+		padding: 0;
+
+	}
+
 	&__top {
 
 		display: flex;
+		justify-content: space-between;
 		margin: 70px 0;
+
+		@media $w1440 {
+
+			margin: 66px 0 70px;
+
+		}
 
 	}
 
 	&__logo {
 
-		margin-right: auto;
 		margin-top: 9px;
+		width: 404px;
+		flex-shrink: 0;
+
+		@media $w1440 {
+
+			margin-top: 15px;
+			width: 200px;
+
+		}
 
 		svg {
 
 			fill: var(--blue);
+
+			@media $w1440 {
+
+				width: 152px;
+				height: 28px;
+
+			}
 
 		}
 
@@ -37,7 +65,6 @@
 
 	&__menu {
 
-		margin-left: 172px;
 		flex-shrink: 0;
 
 		li {
@@ -88,6 +115,12 @@
 		justify-content: space-between;
 		flex-direction: row-reverse;
 		margin: 50px 0 40px;
+
+		@media $w1440 {
+
+			margin: 40px 0;
+
+		}
 
 	}
 

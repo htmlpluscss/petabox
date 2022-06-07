@@ -3,18 +3,17 @@
 	background-color: #fff;
 	padding: var(--space) 0;
 
-	&__title {
-
-		text-align: center;
-		margin-bottom: 80px;
-
-	}
-
 	&__box {
 
 		height: 740px;
 		box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.06);
 		border-radius: 20px;
+
+		@media $w1440 {
+
+			height: 721px;
+
+		}
 
 	}
 
@@ -25,6 +24,12 @@
 		font-size: 16px;
 		line-height: 1.5;
 		text-align: center;
+
+		@media $w1440 {
+
+			margin-top: 40px;
+
+		}
 
 	}
 

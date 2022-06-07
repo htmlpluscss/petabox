@@ -8,14 +8,8 @@
 	z-index: 1;
 
 	@media $w1440 {
-/*
-		padding: 24px 0;
 
-		.center {
-
-			width: 100%;
-
-		} */
+		padding: 63px 0;
 
 	}
 
@@ -35,6 +29,13 @@
 
 			fill: #fff;
 
+			@media $w1440 {
+
+				width: 152px;
+				height: 28px;
+
+			}
+
 		}
 
 	}
@@ -46,6 +47,12 @@
 		li {
 
 			margin: 0 50px;
+
+			@media $w1440 {
+
+				margin: 0 40px;
+
+			}
 
 		}
 
@@ -70,6 +77,12 @@
 				left: 0;
 				pointer-events: none;
 
+				@media $w1440 {
+
+					bottom: -4px;
+
+				}
+
 			}
 
 			@media $desktop {
@@ -91,6 +104,16 @@
 	&__user {
 
 		display: flex;
+
+		@media $w1440 {
+
+			.btn {
+
+				font-size: 16px;
+
+			}
+
+		}
 
 	}
 

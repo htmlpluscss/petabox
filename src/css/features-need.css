@@ -3,19 +3,18 @@
 	background-color: #fff;
 	padding: var(--space) 0;
 
-	&__title {
-
-		text-align: center;
-		margin-bottom: 80px;
-
-	}
-
 	&__list {
 
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 40px;
+
+		@media $w1440 {
+
+			gap: 40px 18px;
+
+		}
 
 	}
 
@@ -24,6 +23,13 @@
 		padding: 32px;
 		width: 424px;
 
+		@media $w1440 {
+
+			width: 388px;
+			padding: 24px;
+
+		}
+
 	}
 
 	dt {
@@ -31,6 +37,13 @@
 		svg {
 
 			margin-bottom: 32px;
+
+			@media $w1440 {
+
+				width: 48px;
+				height: 48px;
+
+			}
 
 		}
 
@@ -42,6 +55,5 @@
 		margin-top: var(--gap);
 
 	}
-
 
 }

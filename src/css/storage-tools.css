@@ -3,13 +3,6 @@
 	margin: var(--space) 0;
 	scroll-margin: var(--gap);
 
-	&__title {
-
-		text-align: center;
-		margin-bottom: 80px;
-
-	}
-
 	&__list {
 
 		display: flex;
@@ -22,10 +15,17 @@
 		width: 285px;
 		padding: 32px;
 
+		@media $w1440 {
+
+			width: 225px;
+
+		}
 
 		img {
 
 			margin: 0 auto 32px;
+			max-width: 100%;
+			object-fit: contain;
 
 		}
 

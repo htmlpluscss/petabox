@@ -3,21 +3,31 @@
 	margin: var(--space) 0;
 	scroll-margin: var(--space);
 
-	&__title {
+	.title {
 
-		text-align: center;
-		margin-bottom: 80px;
 		padding-bottom: 36px;
+
+		@media $w1440 {
+
+			padding-bottom: 40px;
+
+		}
 
 	}
 
 	&__box {
 
 		display: flex;
-		padding: 0px 35px;
+		padding: 0 35px;
 		border-radius: 10px;
 		background-color: #fff;
 		justify-content: space-between;
+
+		@media $w1440 {
+
+			padding: 0;
+
+		}
 
 	}
 
@@ -29,23 +39,26 @@
 		display: flex;
 		flex-direction: column;
 
-		.btn {
+		@media $w1440 {
 
-			width: 100%;
-			border-radius: 8px;
-			margin-top: auto;
-			font-size: 16px;
+			width: 390px;
 
 		}
 
 		&.is-popular {
 
-			left: 4px;
 			color: #fff;
 			position: relative;
 			margin-top: -36px;
 			align-self: flex-start;
 			background-color: var(--blue);
+
+			@media $w1440 {
+
+				width: 380px;
+				margin-top: -40px;
+
+			}
 
 		}
 
@@ -70,6 +83,12 @@
 
 		text-align: center;
 		margin-bottom: 40px;
+
+		@media $w1440 {
+
+			font-size: 32px;
+
+		}
 
 	}
 
@@ -140,6 +159,18 @@
 		margin-left: 27px;
 		margin-bottom: 40px;
 
+		@media $w1440 {
+
+			margin-left: 12px;
+
+			.is-popular & {
+
+				margin-left: 7px;
+
+			}
+
+		}
+
 		li {
 
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%2341A8ED' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
@@ -172,6 +203,25 @@
 				color: #fff;
 
 			}
+
+		}
+
+	}
+
+	&__btn {
+
+		margin-top: auto;
+
+		.is-popular & {
+
+			margin: auto 10px 10px;
+
+		}
+
+		.btn {
+
+			width: 100%;
+			border-radius: 8px;
 
 		}
 
