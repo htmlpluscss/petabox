@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 color: red !important;
+background-color: transparent !important;
 }
 
 html {
@@ -85,6 +86,14 @@ li {
 
 	list-style: none;
 	position: relative;
+
+}
+
+hr {
+
+	border: 0;
+	height: 1px;
+	background-color: var(--border);
 
 }
 

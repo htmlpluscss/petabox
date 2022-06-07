@@ -3,18 +3,136 @@
 	flex-shrink: 0;
 	position: relative;
 	border-top: 4px;
-	padding: 100px 0;
+	padding: 40px 0;
+	border-top: 1px solid var(--border);
 
-	&::before {
+	&__top {
 
-		position: absolute;
-		height: 4px;
-		top: 0;
-		left: 0;
-		right: 0;
-		content: '';
-		border-radius: 4px;
-		background-color: var(--border);
+		display: flex;
+		margin: 70px 0;
+
+	}
+
+	&__logo {
+
+		margin-right: auto;
+		margin-top: 9px;
+
+		svg {
+
+			fill: var(--blue);
+
+		}
+
+	}
+
+	&__head {
+
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 28px;
+		font-family: 'Outfit';
+
+	}
+
+	&__menu {
+
+		margin-left: 172px;
+		flex-shrink: 0;
+
+		li {
+
+			font-size: 16px;
+			line-height: 24px;
+			margin-top: 20px;
+
+		}
+
+		a {
+
+			color: var(--grey);
+			display: flex;
+
+			@media $desktop {
+
+				&:hover {
+
+					color: var(--blue);
+
+				}
+
+			}
+
+		}
+
+		svg {
+
+			fill: var(--grey);
+			margin-right: 16px;
+			flex-shrink: 0;
+
+		}
+
+	}
+
+	hr {
+
+		margin: 24px 0;
+
+	}
+
+	&__bottom {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		margin: 50px 0 40px;
+
+	}
+
+	&__copyright {
+
+		font-size: 16px;
+		color: var(--grey);
+
+	}
+
+	&__social {
+
+		display: flex;
+
+		li {
+
+			margin-left: 32px;
+
+		}
+
+		a {
+
+			display: block;
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			background-color: var(--blue);
+
+			@media $desktop {
+
+				&:hover {
+
+					opacity: .8;
+
+				}
+
+			}
+
+		}
+
+		svg {
+
+			fill: #fff;
+
+		}
 
 	}
 
