@@ -1,0 +1,57 @@
+	<div class="storage-needs">
+
+		<div class="center">
+
+			<h2 class="storage-needs__title h2">
+				Cloud storage for all your needs
+			</h2>
+
+			<dl class="storage-needs__list">
+
+{% for item in [
+	{
+		key : "File Backup",
+		value : "Storing backups is the leading use case of our Storage. All the leading backup tools can be integrated with Petabox in just a&nbsp;few&nbsp;clicks."
+	},
+	{
+		key : "Secondary Backup",
+		value : "Already have a backup on another cloud? Great! However, there's still a chance it might fail, which is why having a second one is a good idea."
+	},
+	{
+		key : "File Sharing",
+		value : "You can use Petabox to share your files publicly and privately over the internet. Access management offers file-level granularity."
+	},
+	{
+		key : "Large File Hosting",
+		value : "Petabox allows you to store the large files: up to 2 TB each! This includes videos, photos and audio files as well as database dump files."
+	},
+	{
+		key : "Cold Data Storage",
+		value : "Petabox is an ideal storage for \"cold\" data, that is rarely used or accessed, but must be stored for a very long time or even forever."
+	},
+	{
+		key : "Logs",
+		value : "With Petabox cloud storage you will never have to worry about logs rotation or losing any of your log files after deleting your instance."
+	}
+
+]%}
+
+				<div class="storage-needs__item">
+
+					<dt class="h3">
+						{{ item.key }}
+					</dt>
+
+					<dd>
+						{{ item.value | safe }}
+					</dd>
+
+				</div>
+
+{% endfor %}
+
+			</dl>
+
+		</div>
+
+	</div>

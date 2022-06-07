@@ -1,0 +1,14 @@
+.pricing {
+
+	margin: var(--space) 0;
+	scroll-margin: var(--space);
+	outline:1px solid red;
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: 80px;
+
+	}
+
+}

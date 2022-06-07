@@ -1,0 +1,32 @@
+.cite-feldman {
+
+	margin: var(--space) 0;
+	scroll-margin: var(--space);
+
+	&__blockquote {
+
+		padding-top: 36px;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 64px;
+		text-align: center;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='96' fill='none' viewBox='0 0 120 96'%3E%3Cpath fill='%2341A8ED' d='M52.48 0v25.26c0 7.68-1.39 15.86-4.15 24.56a102.16 102.16 0 0 1-11.87 25.13A88.45 88.45 0 0 1 17.68 96L0 81.4a181.56 181.56 0 0 0 15.05-26.24 67.88 67.88 0 0 0 6.5-29.34V0h30.93ZM120 0v25.26c0 7.68-1.38 15.86-4.14 24.56a102.15 102.15 0 0 1-11.88 25.13A88.44 88.44 0 0 1 85.2 96L67.52 81.4a181.56 181.56 0 0 0 15.06-26.24 67.88 67.88 0 0 0 6.49-29.34V0H120Z' opacity='.06'/%3E%3C/svg%3E");
+
+	}
+
+	&__cite {
+
+		display: block;
+		margin-top: 80px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 40px;
+		font-style: normal;
+		font-family: 'Outfit';
+
+	}
+
+
+}

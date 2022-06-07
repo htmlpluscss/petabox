@@ -1,4 +1,4 @@
-.features-need {
+.storage-needs {
 
 	background-color: #fff;
 	padding: var(--space) 0;
@@ -24,24 +24,13 @@
 		padding: 32px;
 		width: 424px;
 
-	}
+		dd {
 
-	dt {
-
-		svg {
-
-			margin-bottom: 32px;
+			color: var(--grey);
+			margin-top: var(--gap);
 
 		}
 
 	}
-
-	dd {
-
-		color: var(--grey);
-		margin-top: var(--gap);
-
-	}
-
 
 }
