@@ -159,6 +159,7 @@ li {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 40px;
+	font-family: 'Outfit';
 
 	@media $w1440 {
 

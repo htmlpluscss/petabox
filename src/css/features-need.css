@@ -1,0 +1,47 @@
+.features-need {
+
+	background-color: #fff;
+	padding: var(--space) 0;
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: 80px;
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 40px;
+
+	}
+
+	&__item {
+
+		padding: 32px;
+		width: 424px;
+
+	}
+
+	&__dt {
+
+		svg {
+
+			margin-bottom: 32px;
+
+		}
+
+	}
+
+	dd {
+
+		margin-top: 15px;
+		color: var(--grey);
+
+	}
+
+
+}
