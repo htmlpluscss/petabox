@@ -1,0 +1,451 @@
+fieldset {
+
+	border: 0;
+	min-width: 0;
+	display: block;
+	position: relative;
+
+	&:focus {
+
+		outline: none;
+
+	}
+
+}
+
+legend {
+
+	display: table;
+
+	&:focus {
+
+		outline: none;
+
+	}
+
+}
+
+.btn,
+.button {
+
+	border: 0;
+	border-radius: 0;
+	font-family: inherit;
+	background-color: transparent;
+	transition: var(--transitionDefault);
+	user-select: none;
+	position: relative;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	display: block;
+
+	&:hover {
+
+		cursor: pointer;
+
+	}
+
+	&:focus {
+
+		outline: none;
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+
+	}
+
+}
+
+.btn {
+
+	border-radius: 20px;
+	line-height: 64px;
+	padding: 0 40px;
+	height: 64px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #fff;
+	overflow: hidden;
+	background-color: var(--orange);
+
+	@media $mdWidth {
+
+		height: 56px;
+		line-height: 56px;
+		font-size: 16px;
+		border-radius: 16px;
+
+	}
+
+	&::before {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 200%;
+		content: '';
+		transition: var(--transitionDefault);
+		background-image: linear-gradient(75deg, var(--orange), var(--orangeHover), var(--orange));
+
+	}
+
+	span {
+
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-auto-flow: column;
+		gap: 12px;
+		position: relative;
+
+	}
+
+	svg {
+
+		display: initial; /* fallback Grid not working in Safari */
+		fill: #fff;
+
+	}
+
+	&:disabled {
+
+		background-color: rgba(37, 37, 37, 0.12);
+
+		&::before {
+
+			display: none;
+
+		}
+
+	}
+
+	@media $desktop {
+
+		&:hover::before {
+
+			transform: translateX(-100%);
+
+		}
+
+	}
+
+	&--outline {
+
+		background-color: transparent;
+		color: var(--orange);
+		border: 1px solid rgba(37, 37, 37, 0.12);
+
+		&::before {
+
+			display: none;
+
+		}
+
+		svg {
+
+			fill: var(--orange);
+
+		}
+
+	}
+
+	&--text {
+
+		background-color: transparent;
+		height: 24px;
+		line-height: 24px;
+		padding: 0;
+		color: var(--orange);
+
+		@media $mdWidth {
+
+			height: 22px;
+			line-height: 22px;
+			padding: 0;
+
+		}
+
+		&::before {
+
+			display: none;
+
+		}
+
+		svg {
+
+			fill: var(--orange);
+
+		}
+
+	}
+
+}
+
+.input {
+
+	line-height: 22px;
+	padding: 16px 32px;
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--color);
+
+	width: 100%;
+	font-family: inherit;
+	position: relative;
+	appearance: none;
+	display: block;
+	filter: none;
+	-webkit-transform: translateZ(0px);
+
+	background-color: #fff;
+	box-shadow: inset 0 0 0 100px #fff;
+
+	height: 54px;
+	border: 1px solid var(--border);
+	border-radius: 12px;
+
+	@media $smWidth {
+
+		height: 48px;
+		font-size: 16px;
+		padding: 14px 24px;
+		line-height: 20px;
+
+	}
+
+	textarea& {
+
+		height: 126px;
+		resize: none;
+		overflow: auto;
+
+		scrollbar-width: thin;
+		scrollbar-color: var(--placeholder) transparent;
+
+		&::-webkit-scrollbar {
+
+			width: 6px;
+			border-radius: 3px;
+			background-color: transparent;
+
+		}
+
+		&::-webkit-scrollbar-thumb {
+
+			border-radius: 3px;
+			background-color: var(--placeholder);
+
+		}
+
+	}
+
+	@media $desktop {
+
+
+	}
+
+	&::placeholder {
+
+		opacity: 1;
+		color: var(--placeholder);
+
+	}
+
+	&::-ms-clear {
+
+		display: none;
+
+	}
+
+	&:hover:not(:focus) {
+
+		box-shadow: 0 4px 16px rgba(255, 142, 36, 0.12);
+
+	}
+
+	&:focus {
+
+		outline: none;
+		border-color: var(--orange);
+		box-shadow: 0 4px 16px rgba(255, 142, 36, 0.12) !important;
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+
+	}
+
+	&:invalid {
+
+		box-shadow: none;
+
+	}
+
+}
+
+.inputbox {
+
+	display: block;
+	width: 100%;
+
+	&__label {
+
+		display: block;
+		font-weight: 500;
+		line-height: 22px;
+		margin: 8px 0;
+
+		@media $smWidth {
+
+			margin: 6px 0;
+			font-size: 16px;
+			line-height: 20px;
+
+		}
+
+	}
+
+	& + & {
+
+		margin-top: 20px;
+
+	}
+
+}
+
+.checkbox {
+
+	display: flex;
+
+	&__control {
+
+		position: relative;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 500;
+
+		@media $smWidth {
+
+			font-size: 14px;
+			line-height: 17px;
+
+		}
+
+	}
+
+	&__input {
+
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		top: 0;
+		left: 0;
+		opacity: 0.001;
+		z-index: -1;
+		appearance: none;
+
+	}
+
+	&__label {
+
+		display: block;
+		cursor: pointer;
+		user-select: none;
+		padding: 6px 0 6px 48px;
+
+		@media $smWidth {
+
+			padding: 0 0 0 52px;
+
+		}
+
+		&::before {
+
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			left: 0;
+			top: 0;
+			content: '';
+			border: 1px solid var(--border);
+			transition: var(--transitionDefault);
+			border-radius: 12px;
+
+		}
+
+		&::after {
+
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			opacity: 0;
+			left: 0;
+			top: 0;
+			content: '';
+			transition: var(--transitionDefault);
+			border-radius: 12px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%23fff' stroke-width='3' d='m9.31 19.11 4.36 3.27 9.8-11.98'/%3E%3C/svg%3E");
+
+		}
+
+		a {
+
+			color: inherit;
+			text-decoration: underline;
+
+			@media $desktop {
+
+				&:hover {
+
+					text-decoration: none;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__input:not(:checked) ~ &__label {
+
+		color: var(--placeholder);
+
+	}
+
+	@media $desktop {
+
+		&__control:hover &__label::before {
+
+			border-color: var(--orange);
+			box-shadow: 0px 4px 16px rgba(255, 142, 36, 0.12);
+
+		}
+
+	}
+
+	&__input:checked + &__label::before {
+
+		background-image: linear-gradient(75deg, var(--orange), var(--orangeHover));
+		border-color: transparent !important;
+		box-shadow: 0px 4px 16px rgba(255, 142, 36, 0.12);
+
+	}
+
+	&__input:checked + &__label::after {
+
+		opacity: 1;
+
+	}
+
+}

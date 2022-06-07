@@ -1,0 +1,17 @@
+@import url(fonts.css);
+@import url(variables.css);
+@import url(media.css);
+@import url(default.css);
+@import url(form.css);
+
+@import url(header.css);
+@import url(footer.css);
+/*@import url(modal.css);
+*/
+@import url(first-screen.css);
+/* @import url(base-list.css);
+@import url(in-details.css);
+@import url(how-help.css);
+@import url(technologies.css);
+@import url(clients.css);
+@import url(data-protection.css); */

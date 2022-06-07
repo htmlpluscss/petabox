@@ -1,0 +1,230 @@
+.modal {
+
+	flex-grow: 1;
+	position: relative;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: var(--indent);
+
+	@media $smWidth {
+
+		padding: 0;
+
+	}
+
+	&__box {
+
+		position: relative;
+		max-width: 100%;
+
+	}
+
+	&__item {
+
+		background-color: #fff;
+		padding: 48px 60px;
+		max-width: 100%;
+		border-radius: 32px;
+		width: 576px;
+		position: relative;
+
+		@media $smWidth {
+
+			border-radius: 0;
+			padding: 92px 28px 40px;
+
+		}
+
+		&--ok {
+
+			text-align: center;
+
+		}
+
+		&--video {
+
+			padding: 0 0 56.25%;
+			padding: 0 0 50% !important;
+			border-radius: 0;
+			width: 960px;
+			height: 0;
+
+			@media $smWidth {
+
+				margin: 50px 0 0;
+
+			}
+
+			video,
+			iframe {
+
+				width: 100%;
+				height: 100%;
+				border: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+			}
+
+		}
+
+	}
+
+	&__item--video:not(.visuallyhidden) ~ &__close-btn {
+
+		top: -32px;
+		right: -32px;
+		--color: #fff;
+
+		@media $smWidth {
+
+			top: 10px;
+			right: 10px;
+
+		}
+
+	}
+
+	&__close-btn {
+
+		position: absolute;
+		top: 55px;
+		right: 60px;
+
+		@media $smWidth {
+
+			top: 28px;
+			right: 28px;
+
+		}
+
+		svg {
+
+			stroke: var(--color);
+
+			@media $smWidth {
+
+				width: 32px;
+				height: 32px;
+
+			}
+
+		}
+
+		@media $desktop {
+
+			&:hover svg {
+
+				stroke: var(--orange);
+
+			}
+
+		}
+
+	}
+
+	&__title {
+
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 39px;
+
+	}
+
+	&__fieldset {
+
+		margin: 40px 0;
+
+	}
+
+	&__checkbox {
+
+		margin: 32px 0;
+
+	}
+
+	&__submit {
+
+		margin-top: 48px;
+		width: 100%;
+
+	}
+
+	&__text {
+
+		font-weight: 300;
+		margin: 16px 0;
+
+	}
+
+	&__ico {
+
+		width: 80px;
+		height: 80px;
+		box-shadow: var(--box-shadow);
+		border-radius: 12px;
+		margin: 46px auto 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.is-green {
+
+			svg {
+
+				fill: none;
+				stroke: var(--green);
+
+			}
+
+		}
+
+	}
+
+}
+
+.modal-show {
+
+	.modal {
+
+		display: flex;
+
+	}
+
+	.wrapper {
+
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: hidden;
+		pointer-events: none;
+
+		&::after {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			z-index: 9;
+			opacity: .5;
+			background-color: var(--color);
+
+		}
+
+		@media $smWidth {
+
+			filter: blur(8px);
+
+		}
+
+	}
+
+}

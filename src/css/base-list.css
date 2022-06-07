@@ -1,0 +1,182 @@
+.base-list {
+
+	scroll-margin: var(--gap);
+
+	ul {
+
+		display: grid;
+		gap: 32px;
+		grid-template-columns: 1fr 1fr;
+
+		@media $lgWidth {
+
+			gap: 40px;
+
+		}
+
+		@media $mdWidth {
+
+			gap: 24px;
+
+		}
+
+		@media $smWidth {
+
+			display: block;
+
+		}
+
+	}
+
+	li {
+
+		height: 136px;
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 1.25;
+		padding: 0 52px;
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		box-shadow: var(--box-shadow);
+		border-radius: 32px;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+
+		a {
+
+			&::after {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				border-radius: 32px;
+
+				@media $mdWidth {
+
+					border-radius: 24px;
+
+				}
+
+				@media $smWidth {
+
+					border-radius: 20px;
+
+				}
+
+			}
+
+		}
+
+		@media $lgWidth {
+
+			font-size: 32px;
+			height: 168px;
+			padding: 0 68px;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 20px;
+			height: 88px;
+			padding: 0 20px;
+			border-radius: 24px;
+
+		}
+
+		@media $smWidth {
+
+			margin: 20px 0;
+			border-radius: 20px;
+
+		}
+
+		&:nth-child(1) {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='314' height='168' fill='none' viewBox='0 0 314 168'%3E%3Cg filter='url(%23a)' opacity='.2'%3E%3Cpath fill='%23AA3ED2' d='M188.36 47.85c16.64-11.18 23.25 3.25 24.47 11.86 4.42 30.1-42.98 62.62-55.6 78.52-12.6 15.9-43.19 31.62-70.58 31.27-27.38-.36-49.92-63.89-40.87-77.95C54.83 77.5 74.4 67.04 93.22 65.93c18.81-1.1 35.11 18.48 58.25 9.62 23.14-8.86 16.1-13.72 36.9-27.7Z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='a' width='369.38' height='325.73' x='-56.25' y='-56.23' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_80_60' stdDeviation='50'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+
+			svg {
+
+				stroke: var(--purpule);
+
+			}
+
+		}
+
+		&:nth-child(2) {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='264' height='168' fill='none' viewBox='0 0 264 168'%3E%3Cg filter='url(%23a)' opacity='.2'%3E%3Cpath fill='%23FF6C38' d='M160.95 128.74c6.7 16.57-7.1 19.68-14.85 19.17-27.06-1.68-46.73-49-58.28-62.93-11.55-13.93-19.65-43.5-14.31-67.33 5.34-23.83 64.9-31.82 75.51-21.34 10.6 10.48 16.13 29.48 13.64 46.1-2.5 16.62-22.58 27.24-19.1 49.05 3.47 21.82 9.02 16.57 17.39 37.28Z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='a' width='291.42' height='356.17' x='-28.17' y='-108.21' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_80_68' stdDeviation='50'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+
+			svg {
+
+				fill: var(--orange);
+
+				[stroke-width] {
+
+					stroke: var(--orange);
+
+				}
+
+			}
+
+		}
+
+		&:nth-child(3) {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='306' height='168' fill='none' viewBox='0 0 306 168'%3E%3Cg filter='url(%23a)' opacity='.2'%3E%3Cpath fill='%234DB2CD' d='M81.91 30.64c-11.5-16.42 2.8-23.3 11.38-24.7 30-5 63.45 41.76 79.59 54.06 16.14 12.3 32.46 42.56 32.64 69.95.18 27.4-62.9 51.17-77.13 42.4-14.24-8.78-25.07-28.14-26.54-46.93-1.48-18.8 17.79-35.48 8.48-58.43-9.31-22.96-14.04-15.83-28.42-36.35Z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='a' width='327.91' height='368.63' x='-22.39' y='-94.43' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_80_75' stdDeviation='50'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+
+			svg {
+
+				fill: var(--blue);
+
+				[stroke-width] {
+
+					stroke: var(--blue);
+
+				}
+
+			}
+
+		}
+
+		&:nth-child(4) {
+
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='309' height='168' fill='none' viewBox='0 0 309 168'%3E%3Cg filter='url(%23a)' opacity='.2'%3E%3Cpath fill='%23AA3ED2' d='M203.58 69.54c12.23-13.03.48-20.92-6.93-23.23-25.84-8.2-61.27 28.83-77.07 37.65-15.8 8.82-34.02 33.47-37.64 57.62-3.62 24.15 49.04 53.1 62.72 47.16 13.67-5.95 25.68-21.67 29.35-38.07 3.68-16.4-11.22-33.55-.1-52.64 11.11-19.09 14.38-12.2 29.67-28.49Z'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='a' width='327.13' height='344.39' x='-18.24' y='-54.87' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur result='effect1_foregroundBlur_80_85' stdDeviation='50'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+
+			svg {
+
+				stroke: var(--purpule);
+
+			}
+
+		}
+
+		svg {
+
+			margin-right: 44px;
+			flex-shrink: 0;
+			fill: none;
+
+			@media $lgWidth {
+
+				margin-right: 48px;
+
+			}
+
+			@media $mdWidth {
+
+				margin-right: 24px;
+				width: 40px;
+				height: 40px;
+
+			}
+
+		}
+
+	}
+
+}
