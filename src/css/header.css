@@ -31,6 +31,12 @@
 
 		margin-right: 38px;
 
+		svg {
+
+			fill: #fff;
+
+		}
+
 	}
 
 	&__menu {
