@@ -15,7 +15,24 @@
 
 	@media $w1024 {
 
-		padding: 39px 0;
+		padding: 40px 0;
+
+		.center {
+
+			width: 100%;
+			padding: 0 38px;
+
+		}
+
+	}
+
+	@media $w768 {
+
+		.center {
+
+			padding: 0 var(--indent);
+
+		}
 
 	}
 
@@ -40,6 +57,14 @@
 		@media $w1024 {
 
 			width: 156px;
+
+		}
+
+		@media $w768 {
+
+			height: 40px;
+			display: flex;
+			align-items: center;
 
 		}
 
@@ -69,6 +94,12 @@
 
 		display: flex;
 
+		@media $w768 {
+
+			display: none;
+
+		}
+
 		li {
 
 			margin: 0 50px;
@@ -83,6 +114,16 @@
 
 				margin: 0 24px;
 				font-size: 16px;
+
+			}
+
+			@media $w768 {
+
+				font-size: 24px;
+				line-height: 32px;
+				margin: 60px 0;
+				display: flex;
+				justify-content: center;
 
 			}
 
@@ -147,6 +188,12 @@
 
 		}
 
+		@media $w768 {
+
+			margin-left: auto;
+
+		}
+
 	}
 
 	&__btn-menu {
@@ -155,6 +202,9 @@
 
 		@media $w768 {
 
+			display: block;
+			margin-right: -4px;
+			margin-left: 36px;
 
 		}
 
@@ -164,9 +214,74 @@
 
 @media $w768 {
 
+	.btn-menu {
+
+		width: 40px;
+		height: 40px;
+
+		&__top,
+		&__center,
+		&__bottom {
+
+			position: absolute;
+			width: 32px;
+			height: 4px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			border-radius: 2px;
+			background-color: #fff;
+			transition: var(--transitionDefault);
+
+		}
+
+		&__top {
+
+			top: 18px;
+
+			.menu-show & {
+
+				top: 0;
+				transform: rotate(-45deg);
+
+			}
+
+		}
+
+		&__center {
+
+			.menu-show & {
+
+				opacity: 0;
+
+			}
+
+		}
+
+		&__bottom {
+
+			bottom: 18px;
+
+			.menu-show & {
+
+				bottom: 0;
+				transform: rotate(45deg);
+
+			}
+
+		}
+
+	}
+
 	.menu-show {
 
-		background-color: #fff;
+		background-color: var(--blue);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='558' height='558' viewBox='0 0 558 558'%3E%3Cpath fill='%23fff' fill-opacity='.2' d='M558 0v558H0L558 0Z'/%3E%3Cpath fill='%23fff' fill-opacity='.2' d='M558 136.46V558H135.9L558 136.46Z'/%3E%3C/svg%3E");
 
 		.main,
 		.footer {
@@ -177,7 +292,41 @@
 
 		.header {
 
+			display: flex;
+			flex-direction: column;
+			bottom: 0;
 
+			.center {
+
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+
+			}
+
+			&__flex {
+
+				flex-grow: 1;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-between;
+
+			}
+
+			&__menu {
+
+				display: block;
+				order: 4;
+				width: 100%;
+
+			}
+
+			&__user {
+
+				display: none;
+
+			}
 
 		}
 

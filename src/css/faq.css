@@ -35,6 +35,12 @@
 
 			margin-top: -36px;
 
+			@media $w768 {
+
+				margin-top: -24px;
+
+			}
+
 		}
 
 	}
@@ -51,6 +57,12 @@
 
 			font-size: 16px;
 			line-height: 1.5;
+
+		}
+
+		@media $w768 {
+
+			padding: 24px 72px 24px 40px;
 
 		}
 
@@ -74,6 +86,12 @@
 				display: none;
 
 			}
+
+		}
+
+		@media $w768 {
+
+			padding: 12px 120px 24px 40px;
 
 		}
 

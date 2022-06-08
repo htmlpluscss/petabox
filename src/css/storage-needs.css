@@ -37,6 +37,12 @@
 
 		}
 
+		@media $w768 {
+
+			padding: 24px 16px;
+
+		}
+
 		dd {
 
 			color: var(--grey);

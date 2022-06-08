@@ -22,12 +22,25 @@
 
 	}
 
+	@media $w768 {
+
+		padding: 152px 0 140px;
+		background-size: 100% auto;
+
+	}
+
 	&__flex {
 
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		position: relative;
+
+		@media $w768 {
+
+			display: block;
+
+		}
 
 	}
 
@@ -43,7 +56,13 @@
 
 		@media $w1024 {
 
-			max-width: 400px;
+			max-width: 380px;
+
+		}
+
+		@media $w768 {
+
+			margin: auto;
 
 		}
 
@@ -73,6 +92,13 @@
 
 			}
 
+			@media $w768 {
+
+				top: 62px;
+				right: -90px;
+
+			}
+
 		}
 
 		&-2 {
@@ -97,6 +123,13 @@
 
 			}
 
+			@media $w768 {
+
+				bottom: -480px;
+				right: -146px;
+
+			}
+
 		}
 
 		&-3 {
@@ -118,6 +151,13 @@
 
 				bottom: -53px;
 				left: -22px;
+
+			}
+
+			@media $w768 {
+
+				bottom: -24px;
+				left: -136px;
 
 			}
 
@@ -148,6 +188,13 @@
 
 		}
 
+		@media $w768 {
+
+			font-size: 20px;
+			justify-content: center;
+
+		}
+
 		img {
 
 			margin-right: 30px;
@@ -163,6 +210,12 @@
 				width: 32px;
 				height: 32px;
 				margin-right: 16px;
+
+			}
+
+			@media $w768 {
+
+				margin-right: 8px;
 
 			}
 
@@ -183,6 +236,12 @@
 		@media $w1024 {
 
 			margin-bottom: 34px;
+
+		}
+
+		@media $w768 {
+
+			text-align: center;
 
 		}
 
@@ -209,6 +268,13 @@
 
 		}
 
+		@media $w768 {
+
+			font-size: 18px;
+			text-align: center;
+
+		}
+
 	}
 
 	&__btn {
@@ -227,6 +293,13 @@
 
 			width: 250px;
 			margin-bottom: 24px;
+
+		}
+
+		@media $w768 {
+
+			width: 100%;
+			margin-bottom: 32px;
 
 		}
 
@@ -258,6 +331,14 @@
 
 			width: 328px;
 			padding: 24px;
+
+		}
+
+		@media $w768 {
+
+			width: 380px;
+			padding: 40px 50px;
+			margin: auto;
 
 		}
 

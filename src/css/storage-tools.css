@@ -28,6 +28,12 @@
 
 		}
 
+		@media $w768 {
+
+			width: 155px;
+
+		}
+
 		img {
 
 			margin: 0 auto 32px;

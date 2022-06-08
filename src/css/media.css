@@ -46,8 +46,7 @@
 
 	.center {
 
-		width: 1024px;
-		padding: 0 var(--indent);
+		width: 864px;
 
 	}
 
@@ -65,6 +64,7 @@
 	.center {
 
 		width: 768px;
+		padding: 0 var(--indent);
 
 	}
 
