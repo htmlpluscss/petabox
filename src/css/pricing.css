@@ -7,9 +7,11 @@
 
 		padding-bottom: 36px;
 
-		@media $w1440 {
-
-			padding-bottom: 40px;
+		@media $w1024 {
+/* del */
+			font-size: 40px;
+			line-height: 56px;
+			margin-bottom: 65px;
 
 		}
 
@@ -45,6 +47,13 @@
 
 		}
 
+		@media $w1024 {
+
+			width: 280px;
+			padding: 20px;
+
+		}
+
 		&.is-popular {
 
 			color: #fff;
@@ -56,7 +65,13 @@
 			@media $w1440 {
 
 				width: 380px;
-				margin-top: -40px;
+
+			}
+
+			@media $w1024 {
+
+				width: 280px;
+				margin-top: -28px;
 
 			}
 
@@ -77,6 +92,12 @@
 		border: 2px solid;
 		border-radius: 20px;
 
+		@media $w1024 {
+
+			margin: -46px auto -6px;
+
+		}
+
 	}
 
 	&__head {
@@ -87,6 +108,13 @@
 		@media $w1440 {
 
 			font-size: 32px;
+
+		}
+
+		@media $w1024 {
+
+			font-size: 24px;
+			margin: 28px 0 24px;
 
 		}
 
@@ -113,6 +141,13 @@
 
 		}
 
+		@media $w1024 {
+
+			font-size: 14px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__price {
@@ -133,6 +168,14 @@
 
 		}
 
+		@media $w1024 {
+
+			font-size: 32px;
+			line-height: 40px;
+			margin-bottom: 16px;
+
+		}
+
 	}
 
 	&__time {
@@ -146,6 +189,13 @@
 		.is-popular & {
 
 			color: rgba(255, 255, 255, 0.5);
+
+		}
+
+		@media $w1024 {
+
+			font-size: 16px;
+			margin-left: 10px;
 
 		}
 
@@ -171,6 +221,20 @@
 
 		}
 
+		@media $w1024 {
+
+			font-size: 14px;
+			margin-left: 3px;
+			margin-bottom: 16px;
+
+			.is-popular & {
+
+				margin-left: 3px;
+
+			}
+
+		}
+
 		li {
 
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%2341A8ED' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
@@ -186,6 +250,12 @@
 			& + li {
 
 				margin-top: 12px;
+
+				@media $w1024 {
+
+					margin-top: 8px;
+
+				}
 
 			}
 
@@ -215,6 +285,12 @@
 		.is-popular & {
 
 			margin: auto 10px 10px;
+
+			@media $w1024 {
+
+				margin: auto 0 0;
+
+			}
 
 		}
 

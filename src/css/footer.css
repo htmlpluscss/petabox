@@ -24,17 +24,21 @@
 
 		}
 
+		@media $w1024 {
+
+			margin: 44px 0 47px;
+
+		}
+
 	}
 
 	&__logo {
 
-		margin-top: 9px;
 		width: 404px;
 		flex-shrink: 0;
 
 		@media $w1440 {
 
-			margin-top: 15px;
 			width: 200px;
 
 		}
@@ -49,6 +53,24 @@
 				height: 28px;
 
 			}
+
+		}
+
+	}
+
+	&__top &__logo {
+
+		margin-top: 9px;
+
+		@media $w1440 {
+
+			margin-top: 15px;
+
+		}
+
+		@media $w1024 {
+
+			display: none;
 
 		}
 
@@ -113,12 +135,38 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		flex-direction: row-reverse;
 		margin: 50px 0 40px;
 
 		@media $w1440 {
 
 			margin: 40px 0;
+
+		}
+
+		@media $w1024 {
+
+			margin-top: 24px;
+
+		}
+
+	}
+
+	&__bottom &__logo {
+
+		display: none;
+
+		@media $w1024 {
+
+			display: block;
+			order: 1;
+			flex-basis: 30%;
+
+			svg {
+
+				width: 130px;
+				height: 24px;
+
+			}
 
 		}
 
@@ -128,16 +176,39 @@
 
 		font-size: 16px;
 		color: var(--grey);
+		order: 2;
+
+		@media $w1024 {
+
+			font-size: 14px;
+			text-align: center;
+
+		}
 
 	}
 
 	&__social {
 
 		display: flex;
+		order: 3;
 
-		li {
+		@media $w1024 {
+
+			flex-basis: 30%;
+			display: flex;
+			justify-content: flex-end;
+
+		}
+
+		li + li {
 
 			margin-left: 32px;
+
+			@media $w1024 {
+
+				margin-left: 24px;
+
+			}
 
 		}
 
@@ -148,6 +219,20 @@
 			height: 48px;
 			border-radius: 50%;
 			background-color: var(--blue);
+
+			@media $w1024 {
+
+				width: 32px;
+				height: 32px;
+
+				svg {
+
+					width: 32px;
+					height: 32px;
+
+				}
+
+			}
 
 			@media $desktop {
 

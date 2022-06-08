@@ -18,6 +18,6 @@
 
 $desktop: (min-width: 1250px);
 $w1440: (max-width: 1600px);
-$w1024: (max-width: 1249px);
-$w768: (max-width: 959px);
+$w1024: (max-width: 1300px);
+$w768: (max-width: 900px);
 $w360: (max-width: 767px);

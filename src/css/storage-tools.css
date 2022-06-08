@@ -21,11 +21,24 @@
 
 		}
 
+		@media $w1024 {
+
+			width: 209px;
+			padding: 24px;
+
+		}
+
 		img {
 
 			margin: 0 auto 32px;
 			max-width: 100%;
 			object-fit: contain;
+
+			@media $w1024 {
+
+				margin-bottom: 8px;
+
+			}
 
 		}
 
@@ -36,6 +49,13 @@
 			line-height: 40px;
 			font-family: 'Outfit';
 			text-align: center;
+
+			@media $w1024 {
+
+				font-size: 16px;
+				line-height: 24px;
+
+			}
 
 		}
 

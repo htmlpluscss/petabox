@@ -15,6 +15,13 @@
 
 		}
 
+		@media $w1024 {
+
+			box-shadow: none;
+			height: 596px;
+
+		}
+
 	}
 
 	&__note {

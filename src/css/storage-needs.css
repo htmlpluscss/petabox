@@ -26,7 +26,14 @@
 		@media $w1440 {
 
 			width: 388px;
-			padding: 24px 24px 32px;
+			padding: 24px;
+
+		}
+
+		@media $w1024 {
+
+			width: 262px;
+			padding: 16px;
 
 		}
 

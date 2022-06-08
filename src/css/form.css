@@ -79,6 +79,15 @@ legend {
 
 	}
 
+	@media $w1024 {
+
+		font-size: 16px;
+		line-height: 40px;
+		padding: 0 30px;
+		height: 40px;
+
+	}
+
 	&--big {
 
 		height: 72px;
@@ -88,6 +97,13 @@ legend {
 
 			height: 64px;
 			line-height: 64px;
+
+		}
+
+		@media $w1024 {
+
+			height: 48px;
+			line-height: 48px;
 
 		}
 
@@ -159,13 +175,21 @@ legend {
 			background-color: #fff;
 			position: absolute;
 			height: 2px;
-			bottom: 12px;
+			bottom: 4px;
 			left: 40px;
 			right: 40px;
 
 			@media $w1440 {
 
 				bottom: 10px;
+
+			}
+
+			@media $w1024 {
+
+				bottom: 2px;
+				left: 30px;
+				right: 30px;
 
 			}
 

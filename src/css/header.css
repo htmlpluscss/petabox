@@ -13,6 +13,12 @@
 
 	}
 
+	@media $w1024 {
+
+		padding: 39px 0;
+
+	}
+
 	&__flex {
 
 		display: flex;
@@ -23,7 +29,19 @@
 
 	&__logo {
 
-		margin-right: 38px;
+		width: 256px;
+
+		@media $w1440 {
+
+			width: 190px;
+
+		}
+
+		@media $w1024 {
+
+			width: 156px;
+
+		}
 
 		svg {
 
@@ -33,6 +51,13 @@
 
 				width: 152px;
 				height: 28px;
+
+			}
+
+			@media $w1024 {
+
+				width: 130px;
+				height: 24px;
 
 			}
 
@@ -51,6 +76,13 @@
 			@media $w1440 {
 
 				margin: 0 40px;
+
+			}
+
+			@media $w1024 {
+
+				margin: 0 24px;
+				font-size: 16px;
 
 			}
 

@@ -193,6 +193,7 @@ hr {
 	@media $w1024 {
 
 		font-size: 18px;
+		line-height: 24px;
 
 	}
 
@@ -202,6 +203,12 @@ hr {
 
 	text-align: center;
 	margin-bottom: 80px;
+
+	@media $w1024 {
+
+		margin-bottom: 40px;
+
+	}
 
 }
 

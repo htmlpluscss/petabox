@@ -6,9 +6,35 @@
 
 				<div class="first-screen__content">
 
-					<img class="first-screen__cloud-1" src="/img/first-screen/cloud-bg-1.svg" alt="cloud" loading="lazy" width="46" height="32">
-					<img class="first-screen__cloud-2" src="/img/first-screen/cloud-bg-2.svg" alt="cloud" loading="lazy" width="66" height="46">
-					<img class="first-screen__cloud-3" src="/img/first-screen/cloud-bg-3.svg" alt="cloud" loading="lazy" width="66" height="46">
+					<picture>
+
+						<source srcset="/img/first-screen/clouds/22x16.svg" media="(max-width: 1300px)">
+						<source srcset="/img/first-screen/clouds/34x24.svg" media="(max-width: 1600px)">
+						<source srcset="/img/first-screen/clouds/46x32.svg">
+
+						<img class="first-screen__cloud-1" src="/img/first-screen/clouds/46x32.svg" alt="cloud" loading="lazy" width="46" height="32">
+
+					</picture>
+
+					<picture>
+
+						<source srcset="/img/first-screen/clouds/34x24.svg" media="(max-width: 1300px)">
+						<source srcset="/img/first-screen/clouds/45x32.svg" media="(max-width: 1600px)">
+						<source srcset="/img/first-screen/clouds/66x46.svg">
+
+						<img class="first-screen__cloud-2" src="/img/first-screen/clouds/66x46.svg" alt="cloud" loading="lazy" width="66" height="46">
+
+					</picture>
+
+					<picture>
+
+						<source srcset="/img/first-screen/clouds/34x24.svg" media="(max-width: 1300px)">
+						<source srcset="/img/first-screen/clouds/45x32.svg" media="(max-width: 1600px)">
+						<source srcset="/img/first-screen/clouds/66x46.svg">
+
+						<img class="first-screen__cloud-3" src="/img/first-screen/clouds/66x46.svg" alt="cloud" loading="lazy" width="66" height="46">
+
+					</picture>
 
 					<p class="first-screen__discounter">
 
