@@ -30,6 +30,12 @@
 
 		}
 
+		@media $w360 {
+
+			height: 953px;
+
+		}
+
 	}
 
 	&__note {
@@ -43,6 +49,14 @@
 		@media $w1440 {
 
 			margin-top: 40px;
+
+		}
+
+		@media $w360 {
+
+			margin-top: 24px;
+			font-size: 14px;
+			line-height: 24px;
 
 		}
 

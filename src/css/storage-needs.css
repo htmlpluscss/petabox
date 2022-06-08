@@ -16,6 +16,12 @@
 
 		}
 
+		@media $w360 {
+
+			display: block;
+
+		}
+
 	}
 
 	&__item {
@@ -43,10 +49,27 @@
 
 		}
 
+		@media $w360 {
+
+			width: 360px;
+			max-width: 100%;
+			margin: 16px auto 0;
+			text-align: center;
+			padding: 16px;
+
+		}
+
 		dd {
 
 			color: var(--grey);
 			margin-top: var(--gap);
+
+			@media $w360 {
+
+				font-size: 13px;
+				line-height: 20px;
+
+			}
 
 		}
 

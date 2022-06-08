@@ -3,17 +3,6 @@
 	background-color: #fff;
 	padding: var(--space) 0;
 
-	.title {
-
-		@media $w1024 {
-/* del */
-			font-size: 40px;
-			line-height: 56px;
-
-		}
-
-	}
-
 	&__list {
 
 		box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.06);
@@ -41,6 +30,12 @@
 
 			}
 
+			@media $w360 {
+
+				margin-top: -16px;
+
+			}
+
 		}
 
 	}
@@ -63,6 +58,15 @@
 		@media $w768 {
 
 			padding: 24px 72px 24px 40px;
+
+		}
+
+		@media $w360 {
+
+			font-size: 14px;
+			line-height: 24px;
+			padding: 16px;
+			padding-right: 56px;
 
 		}
 
@@ -92,6 +96,12 @@
 		@media $w768 {
 
 			padding: 12px 120px 24px 40px;
+
+		}
+
+		@media $w360 {
+
+			padding: 12px 56px 16px 16px;
 
 		}
 

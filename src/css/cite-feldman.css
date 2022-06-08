@@ -28,6 +28,15 @@
 
 		}
 
+		@media $w360 {
+
+			font-size: 16px;
+			line-height: 24px;
+			padding-top: 18px;
+			background-size: 60px 48px;
+
+		}
+
 	}
 
 	&__cite {
@@ -53,6 +62,13 @@
 			font-size: 16px;
 			line-height: 24px;
 			margin-top: 40px;
+
+		}
+
+		@media $w360 {
+
+			font-size: 12px;
+			margin-top: 20px;
 
 		}
 

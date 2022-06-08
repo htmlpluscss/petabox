@@ -3,8 +3,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: red !important;
-background-color: transparent !important;
+/* color: red !important; */
+/* background-color: transparent !important; */
 }
 
 html {
@@ -54,8 +54,8 @@ body {
 	}
 
 	background-repeat: no-repeat;
-background-image: url(/css/360.png);
-background-position: center 0px;
+/* background-image: url(/css/360.png); */
+background-position: center 180px;
 }
 
 a {

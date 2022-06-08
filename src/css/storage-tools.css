@@ -8,6 +8,14 @@
 		display: flex;
 		justify-content: space-between;
 
+		@media $w360 {
+
+			flex-wrap: wrap;
+			gap: 0 10px;
+			justify-content: center;
+
+		}
+
 	}
 
 	&__item {
@@ -34,6 +42,12 @@
 
 		}
 
+		@media $w360 {
+
+			width: calc( 50% - 5px );
+
+		}
+
 		img {
 
 			margin: 0 auto 32px;
@@ -43,6 +57,12 @@
 			@media $w1024 {
 
 				margin-bottom: 8px;
+
+			}
+
+			@media $w360 {
+
+				margin-bottom: 0;
 
 			}
 

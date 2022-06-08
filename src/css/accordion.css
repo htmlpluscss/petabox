@@ -55,6 +55,12 @@
 			margin: auto;
 			fill: var(--grey);
 
+			@media $w360 {
+
+				right: 16px;
+
+			}
+
 		}
 
 	}

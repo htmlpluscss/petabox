@@ -29,6 +29,12 @@
 
 	}
 
+	@media $w360 {
+
+		padding: 104px 0 28px;
+
+	}
+
 	&__flex {
 
 		display: flex;
@@ -62,7 +68,14 @@
 
 		@media $w768 {
 
+			max-width: 380px;
 			margin: auto;
+
+		}
+
+		@media $w360 {
+
+			max-width: 340px;
 
 		}
 
@@ -99,6 +112,12 @@
 
 			}
 
+			@media $w360 {
+
+				display: none;
+
+			}
+
 		}
 
 		&-2 {
@@ -130,6 +149,12 @@
 
 			}
 
+			@media $w360 {
+
+				display: none;
+
+			}
+
 		}
 
 		&-3 {
@@ -158,6 +183,12 @@
 
 				bottom: -24px;
 				left: -136px;
+
+			}
+
+			@media $w360 {
+
+				display: none;
 
 			}
 
@@ -195,6 +226,14 @@
 
 		}
 
+		@media $w360 {
+
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 4px;
+
+		}
+
 		img {
 
 			margin-right: 30px;
@@ -216,6 +255,13 @@
 			@media $w768 {
 
 				margin-right: 8px;
+
+			}
+
+			@media $w360 {
+
+				width: 24px;
+				height: 24px;
 
 			}
 
@@ -242,6 +288,7 @@
 		@media $w768 {
 
 			text-align: center;
+			margin-bottom: 32px;
 
 		}
 
@@ -275,6 +322,14 @@
 
 		}
 
+		@media $w360 {
+
+			font-size: 15px;
+			line-height: 32px;
+			margin-bottom: 16px;
+
+		}
+
 	}
 
 	&__btn {
@@ -300,6 +355,12 @@
 
 			width: 100%;
 			margin-bottom: 32px;
+
+		}
+
+		@media $w360 {
+
+			margin-bottom: 48px;
 
 		}
 
@@ -339,6 +400,14 @@
 			width: 380px;
 			padding: 40px 50px;
 			margin: auto;
+
+		}
+
+		@media $w360 {
+
+			width: 340px;
+			max-width: 100%;
+			padding: 30px 20px;
 
 		}
 

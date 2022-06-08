@@ -36,6 +36,14 @@
 
 		}
 
+		@media $w360 {
+
+			width: 340px;
+			max-width: 100%;
+			margin: auto;
+
+		}
+
 	}
 
 	&__item {
@@ -48,7 +56,6 @@
 		gap: 40px;
 		background-color: #fff;
 
-outline:1px solid red;
 		@media $w1440 {
 
 			width: 390px;
@@ -73,6 +80,16 @@ outline:1px solid red;
 			grid-template-columns: 240px 234px;
 			grid-template-rows: auto auto auto;
 			align-items: flex-start;
+
+		}
+
+		@media $w360 {
+
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			margin-top: 20px;
 
 		}
 
@@ -105,6 +122,13 @@ outline:1px solid red;
 
 			}
 
+			@media $w360 {
+
+				margin-top: 36px;
+				padding: 20px;
+
+			}
+
 		}
 
 	}
@@ -128,6 +152,14 @@ outline:1px solid red;
 
 		}
 
+		@media $w360 {
+
+			left: 0;
+			right: 0;
+			width: 100%;
+
+		}
+
 		&-inner {
 
 			font-family: 'Outfit';
@@ -144,7 +176,7 @@ outline:1px solid red;
 			@media $w768 {
 
 				font-size: 12px;
-				line-height: 32px;
+				line-height: 34px;
 				padding: 0 42px;
 
 			}
@@ -177,6 +209,19 @@ outline:1px solid red;
 			.is-popular & {
 
 				margin-top: 18px;
+
+			}
+
+		}
+
+		@media $w360 {
+
+			width: 100%;
+			margin: 4px 0;
+
+			.is-popular & {
+
+				margin: 18px 0 8px;
 
 			}
 
@@ -321,6 +366,20 @@ outline:1px solid red;
 
 		}
 
+		@media $w360 {
+
+			width: 234px;
+			max-width: 100%;
+			margin: auto;
+
+			.is-popular & {
+
+				margin: 0;
+
+			}
+
+		}
+
 		li {
 
 			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%2341A8ED' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
@@ -381,6 +440,12 @@ outline:1px solid red;
 				margin: auto 0 0;
 
 			}
+
+		}
+
+		@media $w360 {
+
+			width: 100%;
 
 		}
 
