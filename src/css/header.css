@@ -7,9 +7,25 @@
 	right: 0;
 	z-index: 1;
 
+	@media (min-width: 1601px) {
+
+		@media (max-height: 1079px) {
+
+			padding: 40px 0;
+
+		}
+
+	}
+
 	@media $w1440 {
 
-		padding: 63px 0;
+		padding: 60px 0;
+
+		@media (max-height: 1079px) {
+
+			padding: 40px 0;
+
+		}
 
 	}
 
