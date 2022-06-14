@@ -1,0 +1,47 @@
+.calculator {
+  background-color: #fff;
+  padding: var(--space) 0;
+
+  &__box {
+    height: 740px;
+    box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.06);
+    border-radius: 20px;
+
+    @include w1440 {
+      height: 721px;
+    }
+
+    @include w1024 {
+      height: 596px;
+    }
+
+    @include w768 {
+      height: 776px;
+      margin: 0 calc(var(--indent) * -1);
+      padding: 0 var(--indent);
+      border-radius: 0;
+    }
+
+    @include w360 {
+      height: 953px;
+    }
+  }
+
+  &__note {
+    margin: 36px auto 0;
+    max-width: 888px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    @include w1440 {
+      margin-top: 40px;
+    }
+
+    @include w360 {
+      margin-top: 24px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

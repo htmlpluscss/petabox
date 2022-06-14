@@ -1,0 +1,64 @@
+.storage-tools {
+  margin: var(--space) 0;
+  scroll-margin: var(--gap);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include w360 {
+      flex-wrap: wrap;
+      gap: 0 10px;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: 285px;
+    padding: 32px;
+
+    @include w1440 {
+      width: 225px;
+    }
+
+    @include w1024 {
+      width: 209px;
+      padding: 24px;
+    }
+
+    @include w768 {
+      width: 155px;
+    }
+
+    @include w360 {
+      width: calc(50% - 5px);
+    }
+
+    img {
+      margin: 0 auto 32px;
+      max-width: 100%;
+      object-fit: contain;
+
+      @include w1024 {
+        margin-bottom: 8px;
+      }
+
+      @include w360 {
+        margin-bottom: 0;
+      }
+    }
+
+    figcaption {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 40px;
+      font-family: "Outfit";
+      text-align: center;
+
+      @include w1024 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

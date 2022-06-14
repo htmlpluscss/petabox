@@ -1,0 +1,52 @@
+:root {
+  --color: #1b2a47;
+  --grey: #6e7e9d;
+  --blue: #41a8ed;
+  --pink: #e56399;
+  --error: #ff3e13;
+  --bg: #fafafa;
+  --border: #d4d7e0;
+  --transitionDefault: 0.3s;
+  --indent: 120px;
+  --gap: 15px;
+  --space: 160px;
+}
+
+@mixin desktop {
+  @media (min-width: 1250px) {
+    @content;
+  }
+}
+@mixin w1440 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+@mixin w1024 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+@mixin w768 {
+  @media (max-width: 940px) {
+    @content;
+  }
+}
+@mixin w360 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+/*
+  EXAPLE USAGE
+
+  .container {
+    background: red;
+
+    @include md {
+      background: green;
+    }
+  }
+  
+*/
