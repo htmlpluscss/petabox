@@ -1,0 +1,35 @@
+.checkout {
+
+	width: 398px;
+	align-self: center;
+	margin: auto;
+
+	&__title {
+
+		margin-bottom: 16px;
+
+	}
+
+	&__text {
+
+		font-size: 18px;
+		line-height: 32px;
+		color: var(--grey);
+		margin-bottom: 40px;
+
+	}
+
+	&__foot {
+
+		display: flex;
+		margin-top: 40px;
+
+		.btn {
+
+			width: 100%;
+
+		}
+
+	}
+
+}

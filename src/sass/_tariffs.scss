@@ -1,0 +1,137 @@
+.tariffs {
+
+	width: 755px;
+	background-color: #fff;
+	box-shadow: -4px -4px 20px rgba(13, 19, 33, 0.04);
+	border-radius: 10px;
+	align-self: center;
+	margin: 10px auto 0;
+	padding: 36px 0 24px 45px;
+
+	table {
+
+		width: 100%;
+		border: 0;
+		border-collapse: collapse;
+
+	}
+
+	&__label {
+
+		height: 0;
+		position: relative;
+		display: flex;
+		justify-content: center;
+
+		&-inner {
+
+			position: absolute;
+			top: -47px;
+			padding: 0 10px;
+			background-color: #fff;
+			border: 1px solid;
+			border-radius: 10px;
+			font: 10px/20px 'Outfit';
+			color: var(--blue);
+
+		}
+
+	}
+
+	thead {
+
+		th {
+
+			border-left: 1px solid var(--bg);
+			font-weight: inherit;
+
+		}
+
+	}
+
+	&__name {
+
+		font: 600 14px/16px 'Outfit';
+
+		th {
+
+			padding-bottom: 12px;
+
+		}
+
+	}
+
+	&__price {
+
+		font: 600 24px/32px 'Outfit';
+		color: var(--blue);
+
+	}
+
+	&__time {
+
+		font: 500 12px/24px 'Outfit';
+		color: var(--grey);
+
+		th {
+
+			padding-bottom: 8px;
+
+		}
+
+	}
+
+	tbody {
+
+		th {
+
+			text-align: left;
+			vertical-align: top;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 400;
+			padding: 16px 0;
+
+		}
+
+		tr:last-child {
+
+			td, th {
+
+				padding-bottom: 8px;
+
+			}
+
+		}
+
+		td {
+
+			width: 178px;
+			text-align: center;
+			vertical-align: top;
+			border-left: 1px solid var(--bg);
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 24px;
+			padding: 16px 0;
+
+		}
+
+	}
+
+	&__no,
+	&__yes {
+
+		color: transparent;
+
+	}
+
+	&__yes {
+
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3E%3Cpath stroke='%2341A8ED' stroke-width='2' d='m6.67 18.67 5.33 4L24 8'/%3E%3C/svg%3E");
+
+	}
+
+}

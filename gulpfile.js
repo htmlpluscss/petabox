@@ -86,6 +86,7 @@ gulp.task('sass', () => {
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sourcemaps.write())
+		.pipe(rename('styles.css'))
 		.pipe(gulp.dest('build/css'))
 		.pipe(csso())
 		.pipe(rename({suffix: ".min"}))
@@ -203,7 +204,7 @@ gulp.task('ftp', () => {
 gulp.task('watch', () => {
 	gulp.watch('src/js/*.*', gulp.series('js'));
 //	gulp.watch('src/css/*.*', gulp.series('css'));
-	gulp.watch('src/sass/**/*.scss', ['sass']);
+	gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
 	gulp.watch('src/**/index.html', gulp.series('html'));
 	gulp.watch(['src/main/**','!src/main/index.html'], gulp.series('html:main'));
 	gulp.watch(['src/_include/**/*.html','src/template/**/*.html'], gulp.series('html:touch'));

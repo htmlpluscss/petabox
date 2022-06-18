@@ -65,241 +65,124 @@ legend {
 
 .btn {
 
-	border-radius: 10px;
-	line-height: 52px;
+	border-radius: 8px;
+	line-height: 48px;
 	padding: 0 40px;
-	height: 52px;
+	height: 48px;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Outfit';
+	color: #fff;
+	background-color: var(--blue);
 
-	@include w1440 {
+	&:disabled {
 
-		font-size: 18px;
-
-	}
-
-	@include w1024 {
-
-		font-size: 16px;
-		line-height: 40px;
-		padding: 0 30px;
-		height: 40px;
+		background-color: var(--border);
 
 	}
 
-	&--big {
-
-		height: 72px;
-		line-height: 72px;
-
-		@include w1440 {
-
-			height: 64px;
-			line-height: 64px;
-
-		}
-
-		@include w1024 {
-
-			height: 48px;
-			line-height: 48px;
-
-		}
-
-	}
-
-	&--blue {
-
-		color: #fff;
-		background-color: var(--blue);
-
-		@include desktop {
-
-			&:hover {
-
-				background-color: #008ede;
-
-			}
-
-		}
-
-	}
-
-	&--white {
-
-		background-color: #fff;
-		color: var(--pink);
-
-		@include desktop {
-
-			&:hover {
-
-				color: #fff;
-				background-color: var(--pink);
-
-			}
-
-		}
-
-	}
-
-	&--outline {
-
-		color: #fff;
-		box-shadow: inset 0 0 0 2px #fff;
-
-		@include desktop {
-
-			&:hover {
-
-				background-color: var(--pink);
-				box-shadow: inset 0 0 0 2px var(--pink);
-
-			}
-
-		}
-
-	}
-
-	&--link {
-
-		color: #fff;
-
-		&::before {
-
-			transform-origin: 50% 100%;
-			transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-			clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
-			content: '';
-			background-color: #fff;
-			position: absolute;
-			height: 2px;
-			bottom: 4px;
-			left: 40px;
-			right: 40px;
-
-			@include w1440 {
-
-				bottom: 10px;
-
-			}
-
-			@include w1024 {
-
-				bottom: 2px;
-				left: 30px;
-				right: 30px;
-
-			}
-
-		}
-
-		@include desktop {
-
-			&:hover::before {
-
-				transform: scale3d(1, 1, 1);
-				clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
-
-			}
-
-		}
+	&--back {
 
 	}
 
 }
 
-.input {
+.radio-btn-plan {
 
-	line-height: 22px;
-	padding: 16px 32px;
-	font-size: 18px;
-	font-weight: 500;
-	color: var(--color);
-
-	width: 100%;
-	font-family: inherit;
-	position: relative;
-	appearance: none;
 	display: block;
-	filter: none;
-	-webkit-transform: translateZ(0px);
+	cursor: pointer;
+	padding: 12px 16px 12px 48px;
+	position: relative;
+	box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.04);
+	border-radius: 10px;
+	margin: 20px 0;
+	line-height: 24px;
 
-	background-color: #fff;
-	box-shadow: inset 0 0 0 100px #fff;
+	&__head {
 
-	height: 54px;
-	border: 1px solid var(--border);
-	border-radius: 12px;
+		display: flex;
+		align-items: center;
+		font-family: 'Outfit';
+		margin-bottom: 10px;
 
-	textarea#{&} {
+		&::before {
 
-		height: 126px;
-		resize: none;
-		overflow: auto;
-
-		scrollbar-width: thin;
-		scrollbar-color: var(--placeholder) transparent;
-
-		&::-webkit-scrollbar {
-
-			width: 6px;
-			border-radius: 3px;
-			background-color: transparent;
-
-		}
-
-		&::-webkit-scrollbar-thumb {
-
-			border-radius: 3px;
-			background-color: var(--placeholder);
+			position: absolute;
+			width: 14px;
+			height: 14px;
+			top: 16px;
+			left: 16px;
+			content: '';
+			border: 1px solid var(--grey);
+			border-radius: 4px;
 
 		}
 
-	}
+		&::after {
 
-	@include desktop {
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top: 20px;
+			left: 20px;
+			content: '';
+			border-radius: 2px;
 
-
-	}
-
-	&::placeholder {
-
-		opacity: 1;
-		color: var(--placeholder);
-
-	}
-
-	&::-ms-clear {
-
-		display: none;
+		}
 
 	}
 
-	&:hover:not(:focus) {
+	&__input:checked + &__head::before {
 
-		box-shadow: 0 4px 16px rgba(255, 142, 36, 0.12);
-
-	}
-
-	&:focus {
-
-		outline: none;
-		border-color: var(--orange);
-		box-shadow: 0 4px 16px rgba(255, 142, 36, 0.12) !important;
+		border-color: var(--blue);
 
 	}
 
-	&:disabled {
+	&__input:checked + &__head::after {
 
-		pointer-events: none;
+		background-color: var(--blue);
 
 	}
 
-	&:invalid {
+	&__name {
 
-		box-shadow: none;
+		font-weight: 600;
+		font-size: 16px;
+		flex-grow: 1;
+		display: flex;
+
+		&[data-suf]::after {
+
+			content: attr(data-suf);
+			font-weight: 600;
+			font-size: 12px;
+			margin-left: 4px;
+			color: var(--pink);
+
+		}
+
+	}
+
+	&__price {
+
+		font-weight: 600;
+		font-size: 18px;
+		color: var(--blue);
+
+	}
+
+	&__time {
+
+		font-size: 12px;
+		color: var(--grey);
+
+	}
+
+	&__desc {
+
+		display: block;
+		font-weight: 600;
+		font-size: 14px;
 
 	}
 

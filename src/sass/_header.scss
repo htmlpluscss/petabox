@@ -1,0 +1,17 @@
+.header {
+
+	position: absolute;
+	top: 70px;
+	left: 0;
+	right: 0;
+	display: flex;
+
+	&__left {
+
+		width: 50%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+}

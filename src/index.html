@@ -4,8 +4,14 @@
 
 {% extends "template/base.html" %}
 
-{% block content %}
+{% block left %}
 
-Выбор тарифа
+{% include "tariffs/left.html" %}
+
+{% endblock %}
+
+{% block right %}
+
+{% include "tariffs/right.html" %}
 
 {% endblock %}
