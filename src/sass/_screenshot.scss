@@ -1,0 +1,47 @@
+.screenshot {
+
+	margin-left: calc(var(--indent) - 34px);
+	position: relative;
+	margin-top: 37px;
+	padding: 34px;
+	overflow: hidden;
+
+	&__name {
+
+		position: absolute;
+		font: 500 13px/24px 'Inter';
+		color: #fff;
+		background-color: var(--blue);
+		border-radius: 5px;
+		box-shadow: -4px -4px 20px rgba(65, 168, 237, 0.3);
+		left: 24px;
+		display: flex;
+		align-items: center;
+		padding-left: 36px;
+		width: 196px;
+		height: 48px;
+
+		svg {
+
+			margin-right: 16px;
+			stroke: #fff;
+			fill: none;
+
+		}
+
+		&--dashboard {
+
+			top: 117px;
+
+		}
+
+	}
+
+	img {
+
+		box-shadow: -4px -4px 20px rgba(13, 19, 33, 0.06);
+		border-radius: 10px;
+
+	}
+
+}

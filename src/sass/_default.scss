@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: red !important;
+/* color: red !important; */
 }
 
 html {
@@ -36,7 +36,7 @@ body {
 	position: relative;
 	background-color: var(--bg);
 background-position: top;
-background-image: url(/sass/1.png);
+/* background-image: url(/sass/1.png); */
 }
 
 a {
@@ -94,6 +94,12 @@ hr {
 
 .h1 {
 
+	font: 600 36px/40px 'Outfit';
+
+}
+
+.h2 {
+
 	font: 600 28px/40px 'Outfit';
 
 }
@@ -120,6 +126,7 @@ hr {
 	}
 
 	&__right {
+display: none;
 
 		width: 50%;
 		display: flex;

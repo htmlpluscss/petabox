@@ -1,0 +1,17 @@
+{% set title = "2. Dashboard | Onboarding" %}
+
+{% set description = "Manage and monitor your data storage at a glance: intuitive dashboard with all the statistics and simple visualization of storage / bandwidth usage." %}
+
+{% extends "template/base.html" %}
+
+{% block left %}
+
+{% include "dashboard/left.html" %}
+
+{% endblock %}
+
+{% block right %}
+
+{% include "dashboard/right.html" %}
+
+{% endblock %}
