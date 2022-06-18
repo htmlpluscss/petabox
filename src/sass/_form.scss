@@ -73,13 +73,13 @@ legend {
 	font-size: 20px;
 	font-family: 'Outfit';
 
-	@media $w1440 {
+	@include w1440 {
 
 		font-size: 18px;
 
 	}
 
-	@media $w1024 {
+	@include w1024 {
 
 		font-size: 16px;
 		line-height: 40px;
@@ -93,14 +93,14 @@ legend {
 		height: 72px;
 		line-height: 72px;
 
-		@media $w1440 {
+		@include w1440 {
 
 			height: 64px;
 			line-height: 64px;
 
 		}
 
-		@media $w1024 {
+		@include w1024 {
 
 			height: 48px;
 			line-height: 48px;
@@ -114,7 +114,7 @@ legend {
 		color: #fff;
 		background-color: var(--blue);
 
-		@media $desktop {
+		@include desktop {
 
 			&:hover {
 
@@ -131,7 +131,7 @@ legend {
 		background-color: #fff;
 		color: var(--pink);
 
-		@media $desktop {
+		@include desktop {
 
 			&:hover {
 
@@ -149,7 +149,7 @@ legend {
 		color: #fff;
 		box-shadow: inset 0 0 0 2px #fff;
 
-		@media $desktop {
+		@include desktop {
 
 			&:hover {
 
@@ -179,13 +179,13 @@ legend {
 			left: 40px;
 			right: 40px;
 
-			@media $w1440 {
+			@include w1440 {
 
 				bottom: 10px;
 
 			}
 
-			@media $w1024 {
+			@include w1024 {
 
 				bottom: 2px;
 				left: 30px;
@@ -195,7 +195,7 @@ legend {
 
 		}
 
-		@media $desktop {
+		@include desktop {
 
 			&:hover::before {
 
@@ -233,8 +233,7 @@ legend {
 	border: 1px solid var(--border);
 	border-radius: 12px;
 
-
-	textarea& {
+	textarea#{&} {
 
 		height: 126px;
 		resize: none;
@@ -260,7 +259,7 @@ legend {
 
 	}
 
-	@media $desktop {
+	@include desktop {
 
 
 	}

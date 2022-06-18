@@ -14,11 +14,11 @@
 
 }
 
-@media $desktop {
+@include desktop {
 
 }
 
-@media $w1440 {
+@include w1440 {
 
 	:root {
 
@@ -34,7 +34,7 @@
 
 }
 
-@media $w1024 {
+@include w1024 {
 
 	:root {
 
@@ -52,7 +52,7 @@
 
 }
 
-@media $w768 {
+@include w768 {
 
 	:root {
 
@@ -70,7 +70,7 @@
 
 }
 
-@media $w360 {
+@include w360 {
 
 	:root {
 

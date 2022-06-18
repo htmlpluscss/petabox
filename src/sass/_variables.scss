@@ -16,8 +16,53 @@
 
 }
 
-$desktop: (min-width: 1250px);
-$w1440: (max-width: 1600px);
-$w1024: (max-width: 1300px);
-$w768: (max-width: 940px);
-$w360: (max-width: 767px);
+
+@mixin desktop {
+
+	@media (min-width: 1250px) {
+
+		@content;
+
+	}
+
+}
+
+@mixin w1440 {
+
+	@media (max-width: 1600px) {
+
+		@content;
+
+	}
+
+}
+
+@mixin w1024 {
+
+	@media (max-width: 1300px) {
+
+		@content;
+
+	}
+
+}
+
+@mixin w768 {
+
+	@media (max-width: 940px) {
+
+		@content;
+
+	}
+
+}
+
+@mixin w360 {
+
+	@media (max-width: 767px) {
+
+		@content;
+
+	}
+
+}

@@ -17,6 +17,8 @@ const postcssExtend    = require('postcss-extend');
 const mqpacker         = require("@lipemat/css-mqpacker");
 const sourcemaps       = require('gulp-sourcemaps');
 
+const sass             = require('gulp-sass')(require('sass'));
+
 const nunjucksRender   = require('gulp-nunjucks-render');
 
 const rename           = require('gulp-rename');
@@ -42,7 +44,7 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const site             = 'petabox.dev';
-const domain           = 'petabox.htmlpluscss.website';
+const domain           = 'petabox-onboarding.htmlpluscss.website';
 
 try {
 
@@ -77,6 +79,19 @@ const html = (files, since = {}, folder = '') => {
 gulp.task('html', () => html('src/**/index.html', {since: gulp.lastRun('html')}));
 gulp.task('html:touch', () => html('src/**/index.html'));
 gulp.task('html:main', () => html('src/index.html', {}, '/'));
+
+gulp.task('sass', () => {
+
+	return gulp.src('src/sass/style.scss')
+		.pipe(sourcemaps.init())
+		.pipe(sass().on('error', sass.logError))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('build/css'))
+		.pipe(csso())
+		.pipe(rename({suffix: ".min"}))
+		.pipe(gulp.dest('build/css'))
+
+});
 
 gulp.task('css', () => {
 
@@ -156,7 +171,7 @@ gulp.task('clear', () => del('build'));
 
 gulp.task('copy', () => {
 
-	return gulp.src(['src/**/*.*', '!src/**/*.{css,html,js}'], {since: gulp.lastRun('copy')})
+	return gulp.src(['src/**/*.*', '!src/**/*.{css,sass,html,js}'], {since: gulp.lastRun('copy')})
 			.pipe(debug({title: 'copy:'}))
 			.pipe(newer('build'))
 			.pipe(debug({title: 'copy:newer'}))
@@ -187,7 +202,8 @@ gulp.task('ftp', () => {
 
 gulp.task('watch', () => {
 	gulp.watch('src/js/*.*', gulp.series('js'));
-	gulp.watch('src/css/*.*', gulp.series('css'));
+//	gulp.watch('src/css/*.*', gulp.series('css'));
+	gulp.watch('src/sass/**/*.scss', ['sass']);
 	gulp.watch('src/**/index.html', gulp.series('html'));
 	gulp.watch(['src/main/**','!src/main/index.html'], gulp.series('html:main'));
 	gulp.watch(['src/_include/**/*.html','src/template/**/*.html'], gulp.series('html:touch'));
@@ -197,7 +213,7 @@ gulp.task('watch', () => {
 
 gulp.task('default', gulp.series(
 	'clear',
-	gulp.parallel('css','js'),
+	gulp.parallel('sass','js'),
 	'html',
 	'copy',
 	gulp.parallel('ftp','watch','serve')

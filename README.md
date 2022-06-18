@@ -1,5 +1,5 @@
 # petabox
-[build](https://petabox.htmlpluscss.website/)
+[build](https://petabox-onboarding.htmlpluscss.website/)
 
 ## support browsers:
 **Android >= 5**
