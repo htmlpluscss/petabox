@@ -1,9 +1,9 @@
 .screenshot {
 
-	margin-left: calc(var(--indent) - 34px);
+	margin-left: calc(var(--indent) - 54px);
 	position: relative;
-	margin-top: 37px;
-	padding: 34px;
+	margin-top: 17px;
+	padding: 54px;
 	overflow: hidden;
 
 	&__name {
@@ -14,7 +14,7 @@
 		background-color: var(--blue);
 		border-radius: 5px;
 		box-shadow: -4px -4px 20px rgba(65, 168, 237, 0.3);
-		left: 24px;
+		left: 44px;
 		display: flex;
 		align-items: center;
 		padding-left: 36px;
@@ -31,15 +31,27 @@
 
 		&--dashboard {
 
-			top: 117px;
+			top: 137px;
 
 		}
 
 		&--billing {
 
-			top: 371px;
+			top: 391px;
 
 		}
+
+	}
+
+	&__files {
+
+		position: absolute;
+		top: 24px;
+		left: 482px;
+		fill: none;
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 0 0 1px var(--bg), -4px -4px 20px rgba(13, 19, 33, 0.06);
 
 	}
 
