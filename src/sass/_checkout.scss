@@ -18,6 +18,14 @@
 
 	}
 
+	&__text-20 {
+
+		font-size: 20px;
+		line-height: 2;
+		color: var(--grey);
+
+	}
+
 	&__content {
 
 		display: flex;
@@ -56,6 +64,13 @@
 	&__btn-prev {
 
 		margin-right: 16px;
+
+	}
+
+	&:invalid &__btn-submit {
+
+		pointer-events: none;
+		background-color: var(--border);
 
 	}
 

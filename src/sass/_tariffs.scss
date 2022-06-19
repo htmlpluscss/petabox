@@ -92,6 +92,15 @@
 			font-weight: 400;
 			padding: 16px 0;
 
+			sup {
+
+				color: var(--pink);
+				font-weight: 700;
+				font-size: 8px;
+				line-height: 13px;
+
+			}
+
 		}
 
 		tr:last-child {

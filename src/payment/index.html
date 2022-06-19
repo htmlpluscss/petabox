@@ -1,0 +1,17 @@
+{% set title = "5. Payment" %}
+
+{% set description = "Enter your card info for immediate verification. To verify that the card is valid, we may send $1 request to the bank. It will be reversed immediately and you will not be charged." %}
+
+{% extends "template/base.html" %}
+
+{% block left %}
+
+{% include "payment/left.html" %}
+
+{% endblock %}
+
+{% block right %}
+
+{% include "payment/right.html" %}
+
+{% endblock %}

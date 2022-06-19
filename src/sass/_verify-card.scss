@@ -1,0 +1,111 @@
+.verify-card {
+
+	margin: 40px 0;
+
+	&__tabs {
+
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 167px 167px auto;
+		margin-bottom: 16px;
+
+		&-btn-other {
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid var(--bg);
+			border-radius: 10px;
+
+			svg {
+
+				fill: var(--color);
+				stroke: var(--color);
+
+			}
+
+		}
+
+	}
+
+	&__row {
+
+		display: grid;
+		gap: 16px;
+		grid-auto-flow: column;
+
+		& + & {
+
+			margin-top: 16px;
+
+		}
+
+	}
+
+	&__label {
+
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 4px 0;
+		display: block;
+
+	}
+
+	&__input-ico-right {
+
+		position: relative;
+
+		img, svg {
+
+			position: absolute;
+			top: 0;
+			right: 16px;
+			bottom: 0;
+			margin: auto;
+			pointer-events: none;
+
+		}
+
+	}
+
+}
+
+.card-btn-type {
+
+	cursor: pointer;
+
+	&__label {
+
+		display: block;
+		padding: 10px;
+		border: 1px solid var(--border);
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 12px;
+		transition: var(--transitionDefault);
+		line-height: 20px;
+
+		svg {
+
+			fill: none;
+			stroke: var(--color);
+			margin-bottom: 4px;
+
+		}
+
+	}
+
+	&__input:checked + &__label {
+
+		border-color: var(--blue);
+
+		svg {
+
+			stroke: var(--blue);
+
+		}
+
+	}
+
+}

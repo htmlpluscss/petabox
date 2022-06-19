@@ -1,4 +1,4 @@
-	<form action="/dashboard/" class="checkout" onchange="this.querySelector('.btn').disabled=false">
+	<form action="/dashboard/" class="checkout">
 
 {% include "tariffs/progress.html" %}
 
@@ -12,7 +12,7 @@
 
 		<label class="radio-btn-plan">
 
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" value="Pay As You Go">
+			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Pay As You Go">
 
 			<span class="radio-btn-plan__head">
 
@@ -38,7 +38,7 @@
 
 		<label class="radio-btn-plan">
 
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" value="Business">
+			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Business">
 
 			<span class="radio-btn-plan__head">
 
@@ -64,7 +64,7 @@
 
 		<label class="radio-btn-plan">
 
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" value="Enterprise">
+			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Enterprise">
 
 			<span class="radio-btn-plan__head">
 

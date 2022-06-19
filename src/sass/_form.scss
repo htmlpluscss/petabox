@@ -204,3 +204,125 @@ legend {
 	}
 
 }
+
+
+.input {
+
+	line-height: 24px;
+	padding: 12px 16px;
+	font-size: 16px;
+	color: var(--color);
+	font-weight: 600;
+
+	width: 100%;
+	font-family: inherit;
+	position: relative;
+	appearance: none;
+	display: block;
+	filter: none;
+	-webkit-transform: translateZ(0px);
+
+	background-color: #fff;
+
+	height: 48px;
+	border: 1px solid var(--border);
+	border-radius: 10px;
+
+	@include w360 {
+
+
+	}
+
+	textarea#{&} {
+
+		height: 256px;
+		resize: none;
+		overflow: auto;
+
+		scrollbar-width: thin;
+		scrollbar-color: var(--border) transparent;
+
+		&::-webkit-scrollbar {
+
+			width: 6px;
+			border-radius: 0;
+			background-color: transparent;
+
+		}
+
+		&::-webkit-scrollbar-thumb {
+
+			border-radius: 0;
+			background-color: var(--border);
+
+		}
+
+	}
+
+	@include desktop {
+
+
+	}
+
+	&::placeholder {
+
+		opacity: 1;
+		color: var(--border);
+
+		@include desktop {
+
+			font-size: 14px;
+
+		}
+
+	}
+
+	&::-ms-clear {
+
+		display: none;
+
+	}
+
+	&:hover:not(:focus) {
+
+		@include desktop {
+
+			border-color: var(--grey);
+
+		}
+
+	}
+
+	&:focus {
+
+		outline: none;
+		border-color: var(--grey);
+
+		&::placeholder {
+
+			color: var(--grey);
+
+		}
+
+	}
+
+	&:disabled {
+
+		opacity: .5;
+		box-shadow: none;
+
+	}
+
+	&:invalid {
+
+		box-shadow: none;
+
+	}
+
+	&:valid {
+
+		box-shadow: none;
+
+	}
+
+}

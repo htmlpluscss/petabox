@@ -62,4 +62,19 @@
 
 	}
 
+	&--payment {
+
+		overflow: visible;
+		padding: 0;
+		margin: auto;
+
+		img {
+
+			box-shadow: none;
+			border-radius: 0;
+
+		}
+
+	}
+
 }

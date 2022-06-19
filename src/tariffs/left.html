@@ -125,7 +125,7 @@
 	},
 	{
 		name  : "Free data migration",
-		label : "New",
+		sup   : "New",
 		go    : "no",
 		business   : "no",
 		enterprise : "yes"
@@ -137,6 +137,8 @@
 					<th>
 
 						{{ tr.name }}
+
+						{% if tr.sup %}<sup>{{ tr.sup }}</sup>{% endif %}
 
 					</th>
 
