@@ -36,7 +36,7 @@ body {
 	position: relative;
 	background-color: var(--bg);
 background-position: top;
-/* background-image: url(/sass/1.png); */
+/* background-image: url(/sass/5.png); */
 }
 
 a {
@@ -96,11 +96,23 @@ hr {
 
 	font: 600 36px/40px 'Outfit';
 
+	@include w1440 {
+
+		font-size: 28px;
+
+	}
+
 }
 
 .h2 {
 
 	font: 600 28px/40px 'Outfit';
+
+	@include w1440 {
+
+		font-size: 28px;
+
+	}
 
 }
 
@@ -129,7 +141,7 @@ hr {
 
 		width: 50%;
 		display: flex;
-		background-color: #fff;
+		/* background-color: #fff; */
 		padding: var(--indent) 0;
 
 	}

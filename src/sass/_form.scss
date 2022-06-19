@@ -173,8 +173,8 @@ legend {
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 20px;
-		margin: 4px 0;
 		display: block;
+		margin-bottom: 4px;
 
 	}
 
@@ -230,22 +230,20 @@ legend {
 	box-shadow: 2px 2px 20px rgba(13, 19, 33, 0.04);
 	border-radius: 10px;
 	margin: 20px 0;
-	line-height: 24px;
 	user-select: none;
 
 	&__head {
 
 		display: flex;
-		align-items: center;
 		font-family: 'Outfit';
-		margin-bottom: 10px;
+		margin-bottom: 2px;
 
 		&::before {
 
 			position: absolute;
 			width: 14px;
 			height: 14px;
-			top: 16px;
+			top: 20px;
 			left: 16px;
 			content: '';
 			border: 1px solid var(--grey);
@@ -258,7 +256,7 @@ legend {
 			position: absolute;
 			width: 8px;
 			height: 8px;
-			top: 20px;
+			top: 24px;
 			left: 20px;
 			content: '';
 			border-radius: 2px;
@@ -282,14 +280,16 @@ legend {
 	&__name {
 
 		font-weight: 600;
-		font-size: 16px;
+		font-size: 20px;
 		flex-grow: 1;
 		display: flex;
+		line-height: 32px;
 
 		&[data-suf]::after {
 
 			content: attr(data-suf);
 			font-weight: 600;
+			line-height: 24px;
 			font-size: 12px;
 			margin-left: 4px;
 			color: var(--pink);
@@ -300,6 +300,7 @@ legend {
 
 	&__price {
 
+		line-height: 24px;
 		font-weight: 600;
 		font-size: 18px;
 		color: var(--blue);
@@ -310,6 +311,7 @@ legend {
 
 		font-size: 12px;
 		color: var(--grey);
+		line-height: 24px;
 
 	}
 
@@ -317,7 +319,8 @@ legend {
 
 		display: block;
 		font-weight: 600;
-		font-size: 14px;
+		font-size: 16px;
+		line-height: 24px;
 
 	}
 
