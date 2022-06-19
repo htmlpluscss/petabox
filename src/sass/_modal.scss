@@ -10,6 +10,7 @@
 	padding: var(--indent);
 	backdrop-filter: blur(10px);
 
+background-image: url(/sass/6.png);
 	&__box {
 
 		position: relative;
@@ -18,12 +19,18 @@
 	}
 
 	&__item {
-
-		background-color: #fff;
+outline:1px solid red;
+		/* background-color: #fff; */
 		max-width: 100%;
 		width: 526px;
 		border-radius: 10px;
 		padding: 40px;
+
+		@include w1440 {
+
+			width: 478px;
+
+		}
 
 	}
 

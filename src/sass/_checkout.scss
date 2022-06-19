@@ -17,6 +17,13 @@
 		color: var(--grey);
 		margin-bottom: 40px;
 
+		@include w1440 {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__text-20 {
@@ -24,6 +31,13 @@
 		font-size: 20px;
 		line-height: 2;
 		color: var(--grey);
+
+		@include w1440 {
+
+			font-size: 16px;
+			line-height: 28px;
+
+		}
 
 	}
 
@@ -34,11 +48,23 @@
 		justify-content: center;
 		min-height: 504px;
 
+		@include w1440h1024 {
+
+			min-height: 432px;
+
+		}
+
 	}
 
 	&__content &__title {
 
 		margin: 40px 0;
+
+		@include w1440 {
+
+			margin: 16px 0;
+
+		}
 
 	}
 
@@ -47,12 +73,25 @@
 		min-height: 200px;
 		margin-bottom: 20px;
 
+		@include w1440h1024 {
+
+			min-height: 72px;
+			margin-bottom: 0;
+
+		}
+
 	}
 
 	&__foot {
 
 		display: flex;
 		margin-top: 50px;
+
+		@include w1440h1024 {
+
+			margin-top: 40px;
+
+		}
 
 	}
 

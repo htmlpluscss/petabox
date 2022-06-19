@@ -14,6 +14,12 @@
 		justify-content: space-between;
 		counter-reset: headings 0;
 
+		@include w1440 {
+
+			margin-bottom: 42px;
+
+		}
+
 	}
 
 	&__item {
@@ -26,6 +32,12 @@
 		border-radius: 50%;
 		text-align: center;
 		background-color: var(--blue);
+
+		@include w1440 {
+
+			font-size: 12px;
+
+		}
 
 		&.is-current {
 

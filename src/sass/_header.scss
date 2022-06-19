@@ -6,11 +6,32 @@
 	right: 0;
 	display: flex;
 
+	@include w1440 {
+
+		top: 50px;
+
+	}
+
 	&__left {
 
 		width: 50%;
 		display: flex;
 		justify-content: center;
+
+	}
+
+	&__logo {
+
+		@include w1440 {
+
+			img {
+
+				width: 123px;
+				height: 24px;
+
+			}
+
+		}
 
 	}
 

@@ -263,6 +263,24 @@ legend {
 
 		}
 
+		@include w1440 {
+
+			margin-bottom: 10px;
+
+			&::before {
+
+				top: 16px;
+
+			}
+
+			&::after {
+
+				top: 20px;
+
+			}
+
+		}
+
 	}
 
 	&__input:checked + &__head::before {
@@ -296,6 +314,13 @@ legend {
 
 		}
 
+		@include w1440 {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__price {
@@ -321,6 +346,12 @@ legend {
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 24px;
+
+		@include w1440 {
+
+			font-size: 14px;
+
+		}
 
 	}
 

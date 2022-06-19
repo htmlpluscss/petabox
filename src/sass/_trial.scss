@@ -15,6 +15,13 @@
 		line-height: 32px;
 		margin-bottom: 40px;
 
+		@include w1440 {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	.inputbox {
@@ -46,6 +53,16 @@
 
 			display: flex;
 			justify-content: space-between;
+
+			@include w1440 {
+
+				img {
+
+					width: auto;
+
+				}
+
+			}
 
 		}
 
