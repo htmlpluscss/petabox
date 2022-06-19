@@ -82,6 +82,12 @@ legend {
 
 	}
 
+	&--green {
+
+		background-color: var(--green);
+
+	}
+
 	&--back {
 
 		width: 48px;
@@ -96,6 +102,118 @@ legend {
 		svg {
 
 			fill: var(--blue);
+
+		}
+
+	}
+
+	&-exit {
+
+		display: flex;
+		align-items: center;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 40px;
+		color: var(--blue);
+
+		svg {
+
+			margin-left: 8px;
+
+		}
+
+	}
+
+	&--docs {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 5px;
+		font-family: 'Source Sans Pro';
+
+		svg {
+
+			fill: none;
+			margin-right: 16px;
+			stroke: #fff;
+
+		}
+
+	}
+
+	&--copy {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 5px;
+		font-family: 'Source Sans Pro';
+
+		svg {
+
+			fill: #fff;
+			margin-right: 16px;
+			opacity: .5;
+
+		}
+
+	}
+
+}
+
+.inputbox {
+
+	&__label {
+
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		margin: 4px 0;
+		display: block;
+
+	}
+
+	&__input-wrap {
+
+		position: relative;
+
+	}
+
+	&__input-ico-right {
+
+		position: absolute;
+		top: 0;
+		right: 16px;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		pointer-events: none;
+
+		&-btn {
+
+			pointer-events: auto;
+
+			svg {
+
+				fill: var(--border);
+
+			}
+
+			@include desktop {
+
+				&:hover svg {
+
+					fill: var(--blue);
+
+				}
+
+			}
 
 		}
 
@@ -261,6 +379,7 @@ legend {
 
 	@include desktop {
 
+		font-size: 14px;
 
 	}
 
@@ -268,12 +387,6 @@ legend {
 
 		opacity: 1;
 		color: var(--border);
-
-		@include desktop {
-
-			font-size: 14px;
-
-		}
 
 	}
 
@@ -283,7 +396,7 @@ legend {
 
 	}
 
-	&:hover:not(:focus) {
+	&:hover:not(:focus):not([readonly]) {
 
 		@include desktop {
 
@@ -310,6 +423,14 @@ legend {
 
 		opacity: .5;
 		box-shadow: none;
+		background-color: var(--bg);
+
+	}
+
+	&[readonly] {
+
+		border-color: var(--bg);
+		background-color: var(--bg);
 
 	}
 

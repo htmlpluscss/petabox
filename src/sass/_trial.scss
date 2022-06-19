@@ -1,0 +1,54 @@
+.trial-period {
+
+	&__head {
+
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 16px;
+
+	}
+
+	&__text {
+
+		color: var(--grey);
+		font-size: 18px;
+		line-height: 32px;
+		margin-bottom: 40px;
+
+	}
+
+	.inputbox {
+
+		margin: 16px 0;
+
+	}
+
+	&__btns {
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+
+	}
+
+	&__storage-tools {
+
+		margin-top: 40px;
+
+		p {
+
+			margin-bottom: 16px;
+			font: 600 18px/40px 'Outfit';
+
+		}
+
+		&-list {
+
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+	}
+
+}

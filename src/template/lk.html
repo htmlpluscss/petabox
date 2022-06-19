@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>{{ title }}</title>
+
+	<link href="/css/styles.css" rel="preload" as="style">
+	<link href="/js/scripts.js" rel="preload" as="script">
+
+	<link href="/fonts/source-sans-pro-v21-latin-400.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/source-sans-pro-v21-latin-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/source-sans-pro-v21-latin-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/outfit-v5-latin-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/outfit-v5-latin-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+
+	<link href="{{ url }}/favicon.svg" rel="icon" type="image/svg+xml">
+	<link href="{{ url }}/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fafafa">
+
+	<link href="/css/styles.css" rel="stylesheet">
+	<script defer src="/js/scripts.js"></script>
+
+</head>
+
+<body{% if modalOpen %} class="modal-show"{% endif %}>
+
+<div class="wrapper">
+
+	<main class="main">
+
+{% block content %}{% endblock %}
+
+	</main>
+
+</div>
+
+{% include "template/modal.html" %}
+
+</body>
+</html>

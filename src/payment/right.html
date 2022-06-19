@@ -1,4 +1,4 @@
-	<form action="/verify/" class="checkout" autocomplete="off">
+	<form action="/trial/" class="checkout" autocomplete="off">
 
 {% include "payment/progress.html" %}
 
@@ -58,17 +58,21 @@
 
 			<div class="verify-card__row">
 
-				<div class="verify-card__inputbox">
+				<div class="inputbox">
 
-					<label for="verify-card-card-number" class="verify-card__label">
+					<label for="verify-card-card-number" class="inputbox__label">
 						Card number
 					</label>
 
-					<div class="verify-card__input-ico-right">
+					<div class="inputbox__input-wrap">
 
 						<input class="input" type="tel" placeholder="0000 00000 0000 0000" id="verify-card-card-number" name="card-number">
 
-						<img src="/img/verify-card/card-number.svg" width="140" height="16" loading="lazy" alt="Card number">
+						<div class="inputbox__input-ico-right">
+
+							<img src="/img/verify-card/card-number.svg" width="140" height="16" loading="lazy" alt="Card number">
+
+						</div>
 
 					</div>
 
@@ -78,9 +82,9 @@
 
 			<div class="verify-card__row">
 
-				<div class="verify-card__inputbox">
+				<div class="inputbox">
 
-					<label for="verify-card-expiration-date" class="verify-card__label">
+					<label for="verify-card-expiration-date" class="inputbox__label">
 						Expiration date
 					</label>
 
@@ -88,20 +92,24 @@
 
 				</div>
 
-				<div class="verify-card__inputbox">
+				<div class="inputbox">
 
-					<label for="verify-card-security-code" class="verify-card__label">
+					<label for="verify-card-security-code" class="inputbox__label">
 						Security code
 					</label>
 
-					<div class="verify-card__input-ico-right">
+					<div class="inputbox__input-wrap">
 
 						<input class="input" type="password" placeholder="CVV" id="verify-card-security-code" name="security-code">
 
-						<svg width="24" height="24" viewBox="0 0 24 24">
-							<path fill="none" stroke="#D4D7E0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 9h14M2 9V5.6c0-.33.27-.6.6-.6h18.8c.33 0 .6.27.6.6v12.8a.6.6 0 0 1-.6.6H2.6a.6.6 0 0 1-.6-.6V9Z"/>
-							<path fill="#D4D7E0" d="M11.78 16v-.69h.68v-1.64h-.6v-.53a2.4 2.4 0 0 0 .83-.31h.63v2.48h.57V16h-2.11Zm2.55 0v-.49l.67-.64c.2-.2.37-.38.48-.54a.83.83 0 0 0 .18-.47c0-.14-.04-.25-.11-.31a.38.38 0 0 0-.28-.11c-.1 0-.2.03-.28.1-.08.06-.16.12-.24.2l-.46-.46c.17-.18.33-.3.5-.38.17-.09.37-.13.6-.13.21 0 .4.04.56.13.17.08.3.2.39.36a1.1 1.1 0 0 1 0 1.07c-.09.18-.2.35-.35.52l-.42.47a4.76 4.76 0 0 1 .53-.04h.53V16h-2.3Zm3.75.06c-.26 0-.48-.04-.67-.12a1.23 1.23 0 0 1-.46-.33l.39-.54c.1.09.2.16.31.22a.8.8 0 0 0 .68 0 .25.25 0 0 0 .12-.22.35.35 0 0 0-.06-.2c-.04-.06-.12-.1-.23-.13a2.05 2.05 0 0 0-.5-.05v-.6c.27 0 .45-.03.55-.1a.3.3 0 0 0 .14-.26c0-.2-.11-.29-.33-.29-.1 0-.2.02-.28.07-.09.04-.18.1-.28.19l-.43-.52c.16-.13.32-.23.49-.3.17-.07.35-.11.54-.11.35 0 .63.08.84.24.2.15.31.37.31.65 0 .31-.17.54-.51.69v.02c.18.05.33.14.44.27a.7.7 0 0 1 .17.49c0 .2-.06.37-.17.51-.11.14-.26.24-.45.31s-.39.11-.61.11Z"/>
-						</svg>
+						<div class="inputbox__input-ico-right">
+
+							<svg width="24" height="24" viewBox="0 0 24 24">
+								<path fill="none" stroke="#D4D7E0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 9h14M2 9V5.6c0-.33.27-.6.6-.6h18.8c.33 0 .6.27.6.6v12.8a.6.6 0 0 1-.6.6H2.6a.6.6 0 0 1-.6-.6V9Z"/>
+								<path fill="#D4D7E0" d="M11.78 16v-.69h.68v-1.64h-.6v-.53a2.4 2.4 0 0 0 .83-.31h.63v2.48h.57V16h-2.11Zm2.55 0v-.49l.67-.64c.2-.2.37-.38.48-.54a.83.83 0 0 0 .18-.47c0-.14-.04-.25-.11-.31a.38.38 0 0 0-.28-.11c-.1 0-.2.03-.28.1-.08.06-.16.12-.24.2l-.46-.46c.17-.18.33-.3.5-.38.17-.09.37-.13.6-.13.21 0 .4.04.56.13.17.08.3.2.39.36a1.1 1.1 0 0 1 0 1.07c-.09.18-.2.35-.35.52l-.42.47a4.76 4.76 0 0 1 .53-.04h.53V16h-2.3Zm3.75.06c-.26 0-.48-.04-.67-.12a1.23 1.23 0 0 1-.46-.33l.39-.54c.1.09.2.16.31.22a.8.8 0 0 0 .68 0 .25.25 0 0 0 .12-.22.35.35 0 0 0-.06-.2c-.04-.06-.12-.1-.23-.13a2.05 2.05 0 0 0-.5-.05v-.6c.27 0 .45-.03.55-.1a.3.3 0 0 0 .14-.26c0-.2-.11-.29-.33-.29-.1 0-.2.02-.28.07-.09.04-.18.1-.28.19l-.43-.52c.16-.13.32-.23.49-.3.17-.07.35-.11.54-.11.35 0 .63.08.84.24.2.15.31.37.31.65 0 .31-.17.54-.51.69v.02c.18.05.33.14.44.27a.7.7 0 0 1 .17.49c0 .2-.06.37-.17.51-.11.14-.26.24-.45.31s-.39.11-.61.11Z"/>
+							</svg>
+
+						</div>
 
 					</div>
 

@@ -42,33 +42,6 @@
 
 	}
 
-	&__label {
-
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 20px;
-		margin: 4px 0;
-		display: block;
-
-	}
-
-	&__input-ico-right {
-
-		position: relative;
-
-		img, svg {
-
-			position: absolute;
-			top: 0;
-			right: 16px;
-			bottom: 0;
-			margin: auto;
-			pointer-events: none;
-
-		}
-
-	}
-
 }
 
 .card-btn-type {

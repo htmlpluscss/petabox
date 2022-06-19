@@ -1,0 +1,139 @@
+	<div class="modal" id="modal">
+
+		<div class="modal__box">
+
+{% if modalOpen === "trial" %}
+
+			<div class="modal__item modal__item--trial">
+
+				<aside class="trial-period">
+
+					<div class="trial-period__head">
+
+						<h3 class="h2">
+							Trial period:&nbsp;&nbsp;<span class="color-green">30 days</span>
+						</h3>
+
+						<button class="btn-exit button" type="button">
+
+							Logout
+
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<path d="m15.18 6.82-3.3-3.3-.95.95 2.87 2.86H4.41v1.34h9.39l-2.87 2.86.95.95 3.3-3.3a1.67 1.67 0 0 0 0-2.36Z"/>
+								<path d="M6.98 14a.67.67 0 0 1-.66.67H2a.67.67 0 0 1-.67-.67V2A.67.67 0 0 1 2 1.33h4.32a.67.67 0 0 1 .66.67v3.56h1.34V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4.32a2 2 0 0 0 2-2v-3.56H6.98V14Z"/>
+							</svg>
+
+						</button>
+
+					</div>
+
+					<p class="trial-period__text">
+						Enjoy your free trial period: 1Tb  storage space / 1Tb transfer for 30 days. Please use Secret and Access keys with any of the S3 clients below to upload and retrieve your files.
+					</p>
+
+					<div class="inputbox">
+
+						<label for="trial-period-key-id" class="inputbox__label">
+							Access Key ID
+						</label>
+
+						<div class="inputbox__input-wrap">
+
+							<input class="input" value="T5RXEZ0YGWBG9O1O76W4" readonly="readonly" id="trial-period-key-id">
+
+							<div class="inputbox__input-ico-right">
+
+								<button class="inputbox__input-ico-right-btn button" type="button" aria-label="copy buffer">
+
+									<svg width="16" height="16" viewBox="0 0 16 16">
+										<path d="M13.33 13.33H0V2a2 2 0 0 1 2-2h9.33a2 2 0 0 1 2 2v11.33ZM14.67 2.8v11.88h-12V16H16V4.67a2 2 0 0 0-1.33-1.88Z"/>
+									</svg>
+
+								</button>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="inputbox">
+
+						<label for="trial-period-secret-key" class="inputbox__label">
+							Secret Key
+						</label>
+
+						<div class="inputbox__input-wrap">
+
+							<input class="input" value="T5RXEZ0YGWBG9O1O76W4" readonly="readonly" id="trial-period-secret-key">
+
+							<div class="inputbox__input-ico-right">
+
+								<button class="inputbox__input-ico-right-btn button" type="button" aria-label="copy buffer">
+
+									<svg width="20" height="20" viewBox="0 0 20 20">
+										<path fill-rule="evenodd" d="M10 3.75A9.86 9.86 0 0 0 .83 10a9.86 9.86 0 0 0 18.34 0A9.86 9.86 0 0 0 10 3.75Zm0 10.42a4.17 4.17 0 1 1 0-8.34 4.17 4.17 0 0 1 0 8.34ZM7.5 10a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z" clip-rule="evenodd"/>
+									</svg>
+
+								</button>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="trial-period__btns">
+
+						<a href="/" target="_blank" class="btn btn--docs">
+
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.5 2v4m0-4h-4 4Zm0 0-6 6 6-6Z"/>
+								<path stroke-linecap="round" stroke-width="1.5" d="M14.5 8.67v4c0 .73-.6 1.33-1.33 1.33H3.83c-.73 0-1.33-.6-1.33-1.33V3.33C2.5 2.6 3.1 2 3.83 2h4"/>
+							</svg>
+
+							Documentation
+
+						</a>
+
+						<button class="btn btn--green btn--copy" type="button">
+
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<path d="M13.33 13.33H0V2a2 2 0 0 1 2-2h9.33a2 2 0 0 1 2 2v11.33ZM14.67 2.8v11.88h-12V16H16V4.67a2 2 0 0 0-1.33-1.88Z"/>
+							</svg>
+
+							Copy keys
+
+						</button>
+
+					</div>
+
+					<div class="trial-period__storage-tools">
+
+						<p>
+							Use any of these tools with our storage
+						</p>
+
+						<div class="trial-period__storage-tools-list">
+
+							<img src="/img/storage-tools/aws_cli--104x77.png" alt="AWS CLI" loading="lazy" width="104" height="77">
+
+							<img src="/img/storage-tools/rclone--104x77.png" alt="Rclone" loading="lazy" width="104" height="77">
+
+							<img src="/img/storage-tools/s3_browser--104x77.png" alt="S3 browser" loading="lazy" width="104" height="77">
+
+							<img src="/img/storage-tools/cyberduck--104x77.png" alt="Cyberduck" loading="lazy" width="104" height="77">
+
+						</div>
+
+					</div>
+
+				</aside>
+
+			</div>
+
+{% endif %}
+
+		</div>
+
+	</div>
