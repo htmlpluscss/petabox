@@ -202,7 +202,7 @@ gulp.task('ftp', () => {
 });
 
 gulp.task('watch', () => {
-	gulp.watch('src/js/*.*', gulp.series('js'));
+//	gulp.watch('src/js/*.*', gulp.series('js'));
 //	gulp.watch('src/css/*.*', gulp.series('css'));
 	gulp.watch('src/sass/**/*.scss', gulp.series('sass'));
 	gulp.watch('src/**/index.html', gulp.series('html'));
@@ -214,7 +214,8 @@ gulp.task('watch', () => {
 
 gulp.task('default', gulp.series(
 	'clear',
-	gulp.parallel('sass','js'),
+	'sass',
+//	gulp.parallel('сss','js'),
 	'html',
 	'copy',
 	gulp.parallel('ftp','watch','serve')
