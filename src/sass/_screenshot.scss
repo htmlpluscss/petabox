@@ -20,7 +20,6 @@
 
 	}
 
-
 	&__inner {
 
 		position: relative;
@@ -64,6 +63,14 @@
 
 			}
 
+			@include w768 {
+
+				margin-right: 6px;
+				width: 13px;
+				height: 13px;
+
+			}
+
 		}
 
 		&--dashboard {
@@ -79,6 +86,12 @@
 			@include w1024h600 {
 
 				top: 50px;
+
+			}
+
+			@include w768 {
+
+				top: 52px;
 
 			}
 
@@ -100,6 +113,12 @@
 
 			}
 
+			@include w768 {
+
+				top: 215px;
+
+			}
+
 		}
 
 		@include w1440h1024 {
@@ -117,6 +136,22 @@
 			font-size: 8px;
 			left: -5px;
 			padding-left: 24px;
+
+		}
+
+		@include w768 {
+
+			height: 28px;
+			width: 118px;
+			font-size: 8px;
+			left: -5px;
+			padding-left: 24px;
+
+		}
+
+		@include w360 {
+
+			display: none;
 
 		}
 
@@ -150,6 +185,17 @@
 
 		}
 
+		@include w768 {
+
+			top: auto;
+			left: auto;
+			right: -22px;
+			bottom: 100px;
+			width: 138px;
+			height: 78px;
+
+		}
+
 	}
 
 	img {
@@ -168,6 +214,21 @@
 
 			width: 594px;
 			height: auto;
+
+		}
+
+		@include w768 {
+
+			width: 641px;
+			height: 465px;
+
+		}
+
+		@include w360 {
+
+			width: 100%;
+			height: auto;
+			border-radius: 4px;
 
 		}
 
@@ -198,6 +259,22 @@
 				margin-bottom: 40px;
 
 			}
+
+		}
+
+	}
+
+	&--right {
+
+		display: none;
+
+		@include w768 {
+
+			display: flex;
+			justify-content: center;
+			padding: 0;
+			max-width: none;
+			margin: 0 -122px 52px;
 
 		}
 

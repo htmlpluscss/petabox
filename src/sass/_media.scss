@@ -57,14 +57,19 @@
 	:root {
 
 		--indent: 60px;
-		--space: 100px;
+		--space: 50px;
 
 	}
 
 	.center {
 
-		width: 768px;
-		padding: 0 var(--indent);
+		width: 648px;
+
+	}
+
+	.visible-sm {
+
+		display: block;
 
 	}
 

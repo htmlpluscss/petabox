@@ -24,8 +24,8 @@
 	}
 
 	&__item {
-outline:1px solid red;
-		/* background-color: #fff; */
+
+		background-color: #fff;
 		max-width: 100%;
 		width: 526px;
 		border-radius: 10px;
@@ -41,6 +41,13 @@ outline:1px solid red;
 
 			width: 446px;
 			padding: 24px;
+
+		}
+
+		@include w768 {
+
+			width: 478px;
+			padding: 40px;
 
 		}
 

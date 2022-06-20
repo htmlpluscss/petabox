@@ -18,6 +18,12 @@
 
 	}
 
+	@include w768 {
+
+		display: none;
+
+	}
+
 	&__left {
 
 		width: 50%;
