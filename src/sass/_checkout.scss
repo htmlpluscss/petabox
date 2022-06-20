@@ -6,9 +6,24 @@
 
 	@include w768 {
 
-		width: 404px;
-		margin: 60px auto;
-		align-self: flex-start;
+		width: 100%;
+
+	}
+
+	&__body {
+
+		@include w768 {
+
+			width: 404px;
+			margin: auto;
+
+		}
+
+		@include w360 {
+
+			width: 100%;
+
+		}
 
 	}
 
@@ -124,6 +139,12 @@
 		@include w1024 {
 
 			margin: 10px 0;
+
+		}
+
+		@include w360 {
+
+			margin: 8px 0;
 
 		}
 

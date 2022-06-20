@@ -16,6 +16,12 @@
 
 	}
 
+	@include w360 {
+
+		padding: var(--indent);
+
+	}
+
 	&__box {
 
 		position: relative;
@@ -50,6 +56,14 @@
 			padding: 40px;
 
 		}
+
+		@include w360 {
+
+			width: 100%;
+			padding: 24px;
+
+		}
+
 
 	}
 

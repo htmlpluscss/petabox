@@ -25,8 +25,12 @@
 		@include w1024h600 {
 
 			margin-bottom: 26px;
-			font-size: 16px;
-			line-height: 24px;
+
+		}
+
+		@include w360 {
+
+			margin-bottom: 26px;
 
 		}
 
@@ -42,6 +46,12 @@
 
 		}
 
+		@include w360 {
+
+			margin: 12px 0;
+
+		}
+
 	}
 
 	&__btns {
@@ -49,6 +59,19 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 16px;
+
+		@include w360 {
+
+			display: block;
+
+			.btn {
+
+				margin: 12px 0;
+				width: 100%;
+
+			}
+
+		}
 
 		.btn {
 
@@ -68,6 +91,12 @@
 
 		}
 
+		@include w360 {
+
+			margin-top: 26px;
+
+		}
+
 		p {
 
 			margin-bottom: 16px;
@@ -78,6 +107,14 @@
 				font-size: 16px;
 				line-height: 32px;
 				margin-bottom: 10px;
+
+			}
+
+			@include w360 {
+
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 8px;
 
 			}
 
@@ -94,8 +131,17 @@
 
 					width: auto;
 					height: auto;
+					max-width: 100%;
 
 				}
+
+			}
+
+			@include w360 {
+
+				display: grid;
+				gap: 10px;
+				grid-auto-flow: column;
 
 			}
 

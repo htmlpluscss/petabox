@@ -3,13 +3,6 @@
 	overflow: hidden;
 	position: relative;
 
-	@include w768 {
-
-		margin-left: -122px;
-		margin-right: -122px;
-
-	}
-
 	&__list {
 
 		height: 2px;
@@ -36,6 +29,12 @@
 		@include w768 {
 
 			margin: 54px 0 110px;
+
+		}
+
+		@include w360 {
+
+			margin: 44px 0 36px;
 
 		}
 

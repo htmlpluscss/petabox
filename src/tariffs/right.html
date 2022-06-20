@@ -2,210 +2,214 @@
 
 {% include "tariffs/progress.html" %}
 
-		<h1 class="checkout__title h1">
-			Choose a plan
-		</h1>
+		<div class="checkout__body">
 
-		<p class="checkout__text">
-			Cost of storage space and data transfer comes down with the increase of the data volume.
-		</p>
+			<h1 class="checkout__title h1">
+				Choose a plan
+			</h1>
 
-		<label class="radio-btn-plan">
+			<p class="checkout__text">
+				Cost of storage space and data transfer comes down with the increase of the data volume.
+			</p>
 
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Pay As You Go">
+			<label class="radio-btn-plan">
 
-			<span class="radio-btn-plan__head">
+				<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Pay As You Go">
 
-				<span class="radio-btn-plan__name">
-					Pay As You Go
+				<span class="radio-btn-plan__head">
+
+					<span class="radio-btn-plan__name">
+						Pay As You Go
+					</span>
+
+					<span class="radio-btn-plan__price">
+						$3.99
+					</span>
+
+					<span class="radio-btn-plan__time">
+						/month
+					</span>
+
 				</span>
 
-				<span class="radio-btn-plan__price">
-					$3.99
+				<span class="radio-btn-plan__desc">
+					1 TB Storage / 1 TB Transfer
 				</span>
 
-				<span class="radio-btn-plan__time">
-					/month
+				<span class="visible-sm">
+
+					<ul class="radio-btn-plan__desc hide">
+
+						<li>
+							$0.004 / GB Additional Storage
+						</li>
+
+						<li>
+							$0.001 / GB Additional Transfer
+						</li>
+
+						<li>
+							No commitment
+						</li>
+
+						<li>
+							Unlimited API access
+						</li>
+
+						<li>
+							Priority email support
+						</li>
+
+					</ul>
+
+					<button class="radio-btn-plan__btn-desc button" type="button">
+
+						What else is included
+
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
+						</svg>
+
+					</button>
+
 				</span>
 
-			</span>
+			</label>
 
-			<span class="radio-btn-plan__desc">
-				1 TB Storage / 1 TB Transfer
-			</span>
+			<label class="radio-btn-plan">
 
-			<span class="visible-sm">
+				<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Business">
 
-				<ul class="radio-btn-plan__desc hide">
+				<span class="radio-btn-plan__head">
 
-					<li>
-						$0.004 / GB Additional Storage
-					</li>
+					<span class="radio-btn-plan__name" data-suf="Most Popular">
+						Business
+					</span>
 
-					<li>
-						$0.001 / GB Additional Transfer
-					</li>
+					<span class="radio-btn-plan__price">
+						$29.99
+					</span>
 
-					<li>
-						No commitment
-					</li>
+					<span class="radio-btn-plan__time">
+						/month
+					</span>
 
-					<li>
-						Unlimited API access
-					</li>
-
-					<li>
-						Priority email support
-					</li>
-
-				</ul>
-
-				<button class="radio-btn-plan__btn-desc button">
-
-					What else is included
-
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
-					</svg>
-
-				</button>
-
-			</span>
-
-		</label>
-
-		<label class="radio-btn-plan">
-
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Business">
-
-			<span class="radio-btn-plan__head">
-
-				<span class="radio-btn-plan__name" data-suf="Most Popular">
-					Business
 				</span>
 
-				<span class="radio-btn-plan__price">
-					$29.99
+				<span class="radio-btn-plan__desc">
+					10 TB Storage / 10 TB Transfer
 				</span>
 
-				<span class="radio-btn-plan__time">
-					/month
+				<span class="visible-sm">
+
+					<ul class="radio-btn-plan__desc">
+
+						<li>
+							$0.003 / GB Additional Storage
+						</li>
+
+						<li>
+							$0.001 / GB Additional Transfer
+						</li>
+
+						<li>
+							Unlimited API access
+						</li>
+
+						<li>
+							Priority email support
+						</li>
+
+						<li>
+							Live chat support
+						</li>
+
+					</ul>
+
+					<button class="radio-btn-plan__btn-desc is-open button" type="button">
+
+						Hide
+
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
+						</svg>
+
+					</button>
+
 				</span>
 
-			</span>
+			</label>
 
-			<span class="radio-btn-plan__desc">
-				10 TB Storage / 10 TB Transfer
-			</span>
+			<label class="radio-btn-plan">
 
-			<span class="visible-sm">
+				<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Enterprise">
 
-				<ul class="radio-btn-plan__desc">
+				<span class="radio-btn-plan__head">
 
-					<li>
-						$0.003 / GB Additional Storage
-					</li>
+					<span class="radio-btn-plan__name">
+						Enterprise
+					</span>
 
-					<li>
-						$0.001 / GB Additional Transfer
-					</li>
+					<span class="radio-btn-plan__price">
+						$99.99
+					</span>
 
-					<li>
-						Unlimited API access
-					</li>
+					<span class="radio-btn-plan__time">
+						/month
+					</span>
 
-					<li>
-						Priority email support
-					</li>
-
-					<li>
-						Live chat support
-					</li>
-
-				</ul>
-
-				<button class="radio-btn-plan__btn-desc is-open button">
-
-					Hide
-
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
-					</svg>
-
-				</button>
-
-			</span>
-
-		</label>
-
-		<label class="radio-btn-plan">
-
-			<input type="radio" class="radio-btn-plan__input visuallyhidden" name="plan" required="required" value="Enterprise">
-
-			<span class="radio-btn-plan__head">
-
-				<span class="radio-btn-plan__name">
-					Enterprise
 				</span>
 
-				<span class="radio-btn-plan__price">
-					$99.99
+				<span class="radio-btn-plan__desc">
+					50 TB Storage / 50 TB Transfer
 				</span>
 
-				<span class="radio-btn-plan__time">
-					/month
+				<span class="visible-sm">
+
+					<ul class="radio-btn-plan__desc hide">
+
+						<li>
+							$0.002 / GB Additional Storage
+						</li>
+
+						<li>
+							$0.001 / GB Additional Transfer
+						</li>
+
+						<li>
+							Free data migration <sup>NEW</sup>
+						</li>
+
+						<li>
+							Unlimited API access
+						</li>
+
+						<li>
+							Priority email support
+						</li>
+
+						<li>
+							Live chat support
+						</li>
+
+					</ul>
+
+					<button class="radio-btn-plan__btn-desc button" type="button">
+
+						What else is included
+
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
+						</svg>
+
+					</button>
+
 				</span>
 
-			</span>
-
-			<span class="radio-btn-plan__desc">
-				50 TB Storage / 50 TB Transfer
-			</span>
-
-			<span class="visible-sm">
-
-				<ul class="radio-btn-plan__desc hide">
-
-					<li>
-						$0.002 / GB Additional Storage
-					</li>
-
-					<li>
-						$0.001 / GB Additional Transfer
-					</li>
-
-					<li>
-						Free data migration <sup>NEW</sup>
-					</li>
-
-					<li>
-						Unlimited API access
-					</li>
-
-					<li>
-						Priority email support
-					</li>
-
-					<li>
-						Live chat support
-					</li>
-
-				</ul>
-
-				<button class="radio-btn-plan__btn-desc button">
-
-					What else is included
-
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<path d="m7 10.97.95-.97 3.55 3.63L15.05 10l.95.97-3.55 3.63a1.33 1.33 0 0 1-1.9 0L7 10.97Z"/>
-					</svg>
-
-				</button>
-
-			</span>
-
-		</label>
+			</label>
 
 {% include "tariffs/foot.html" %}
+
+		</div>
 
 	</form>
