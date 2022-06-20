@@ -8,6 +8,12 @@
 
 		margin-bottom: 16px;
 
+		@include w1024h600 {
+
+			margin-bottom: 10px;
+
+		}
+
 	}
 
 	&__text {
@@ -19,6 +25,14 @@
 
 		@include w1440 {
 
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
+		@include w1024h600 {
+
+			margin-bottom: 24px;
 			font-size: 16px;
 			line-height: 24px;
 
@@ -39,6 +53,13 @@
 
 		}
 
+		@include w1024h600 {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__content {
@@ -54,6 +75,12 @@
 
 		}
 
+		@include w1024h600 {
+
+			min-height: 372px;
+
+		}
+
 	}
 
 	&__content &__title {
@@ -63,6 +90,12 @@
 		@include w1440 {
 
 			margin: 16px 0;
+
+		}
+
+		@include w1024 {
+
+			margin: 10px 0;
 
 		}
 
@@ -90,6 +123,12 @@
 		@include w1440h1024 {
 
 			margin-top: 40px;
+
+		}
+
+		@include w1024h600 {
+
+			margin-top: 24px;
 
 		}
 

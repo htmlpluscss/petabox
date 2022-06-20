@@ -102,6 +102,13 @@ hr {
 
 	}
 
+	@include w1024h600 {
+
+		font-size: 24px;
+		line-height: 32px;
+
+	}
+
 }
 
 .h2 {
@@ -111,6 +118,13 @@ hr {
 	@include w1440 {
 
 		font-size: 28px;
+
+	}
+
+	@include w1024h600 {
+
+		font-size: 24px;
+		line-height: 32px;
 
 	}
 
@@ -129,15 +143,22 @@ hr {
 
 		width: 50%;
 		display: flex;
+		justify-content: flex-end;
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1266' height='1080' viewBox='0 0 1266 1080'%3E%3Cg fill='%2341A8ED' fill-opacity='.09'%3E%3Cpath d='M1266 0v1080H0L1266 0Z'/%3E%3Cpath d='M1266 264V1080H308L1266 264Z'/%3E%3C/g%3E%3C/svg%3E");
 		background-position: 100% 100%;
 		background-repeat: no-repeat;
 		background-size: auto 100%;
-		padding: var(--indent) 0;
+		padding: var(--indent) 0 90px;
 
-		@include w1024 {
+		@include w1440h1024 {
 
-			padding-bottom: 40px;
+			padding-bottom: 80px;
+
+		}
+
+		@include w1024h600 {
+
+			padding: 80px 0 40px;
 
 		}
 
@@ -149,6 +170,12 @@ hr {
 		display: flex;
 		/* background-color: #fff; */
 		padding: var(--indent) 0;
+
+		@include w1024h600 {
+
+			padding: 50px 0;
+
+		}
 
 	}
 

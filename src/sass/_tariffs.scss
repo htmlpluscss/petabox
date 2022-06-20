@@ -6,13 +6,12 @@
 	box-shadow: -4px -4px 20px rgba(13, 19, 33, 0.04);
 	border-radius: 10px;
 	align-self: center;
-	margin: 10px auto 0;
+	margin: auto;
 	padding: 36px 0 24px 45px;
 
 	@include w1440 {
 
 		width: 560px;
-		margin: auto;
 		padding: 24px 0 24px 32px;
 
 	}
@@ -51,6 +50,12 @@
 			color: var(--blue);
 
 			@include w1440 {
+
+				top: -35px;
+
+			}
+
+			@include w1024h600 {
 
 				top: -35px;
 

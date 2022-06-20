@@ -10,7 +10,12 @@
 	padding: var(--indent);
 	backdrop-filter: blur(10px);
 
-background-image: url(/sass/6.png);
+	@include w1024 {
+
+		padding: 30px;
+
+	}
+
 	&__box {
 
 		position: relative;
@@ -29,6 +34,13 @@ outline:1px solid red;
 		@include w1440 {
 
 			width: 478px;
+
+		}
+
+		@include w1024 {
+
+			width: 446px;
+			padding: 24px;
 
 		}
 

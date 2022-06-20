@@ -1,15 +1,29 @@
 .screenshot {
 
-	margin-left: calc(var(--indent) - 54px);
 	position: relative;
-	margin-top: 20px;
-	padding: 54px;
+	padding-left: 74px;
 	overflow: hidden;
+	max-width: 934px;
+	display: flex;
+	align-items: center;
 
 	@include w1440h1024 {
 
-		margin-top: 61px;
-		margin-left: 27px;
+		max-width: 712px;
+
+	}
+
+	@include w1024h600 {
+
+		max-width: 512px;
+		padding-left: 46px;
+
+	}
+
+
+	&__inner {
+
+		position: relative;
 
 	}
 
@@ -21,7 +35,7 @@
 		background-color: var(--blue);
 		border-radius: 5px;
 		box-shadow: -4px -4px 20px rgba(65, 168, 237, 0.3);
-		left: 44px;
+		left: -10px;
 		display: flex;
 		align-items: center;
 		padding-left: 36px;
@@ -42,15 +56,29 @@
 
 			}
 
+			@include w1024h600 {
+
+				margin-right: 6px;
+				width: 13px;
+				height: 13px;
+
+			}
+
 		}
 
 		&--dashboard {
 
-			top: 137px;
+			top: 84px;
 
 			@include w1440h1024 {
 
-				top: 126px;
+				top: 70px;
+
+			}
+
+			@include w1024h600 {
+
+				top: 50px;
 
 			}
 
@@ -58,11 +86,17 @@
 
 		&--billing {
 
-			top: 391px;
+			top: 337px;
 
 			@include w1440h1024 {
 
-				top: 348px;
+				top: 294px;
+
+			}
+
+			@include w1024h600 {
+
+				top: 200px;
 
 			}
 
@@ -76,13 +110,23 @@
 
 		}
 
+		@include w1024h600 {
+
+			height: 28px;
+			width: 110px;
+			font-size: 8px;
+			left: -5px;
+			padding-left: 24px;
+
+		}
+
 	}
 
 	&__files {
 
 		position: absolute;
-		top: 24px;
-		left: 482px;
+		top: -32px;
+		left: 428px;
 		fill: none;
 		background-color: #fff;
 		border-radius: 8px;
@@ -90,10 +134,19 @@
 
 		@include w1440h1024 {
 
-			top: 28px;
-			left: 434px;
+			top: -26px;
+			left: 398px;
 			width: 178px;
 			height: 100px;
+
+		}
+
+		@include w1024h600 {
+
+			top: -18px;
+			left: 264px;
+			width: 126px;
+			height: 71px;
 
 		}
 
@@ -107,6 +160,13 @@
 		@include w1440h1024 {
 
 			width: 864px;
+			height: auto;
+
+		}
+
+		@include w1024h600 {
+
+			width: 594px;
 			height: auto;
 
 		}
@@ -128,6 +188,14 @@
 
 				width: 605px;
 				height: 715px;
+
+			}
+
+			@include w1024h600 {
+
+				width: 393px;
+				height: 464px;
+				margin-bottom: 40px;
 
 			}
 

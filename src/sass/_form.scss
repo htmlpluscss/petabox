@@ -113,7 +113,7 @@ legend {
 		align-items: center;
 		font-weight: 600;
 		font-size: 14px;
-		line-height: 40px;
+		line-height: 32px;
 		color: var(--blue);
 
 		svg {
@@ -232,6 +232,12 @@ legend {
 	margin: 20px 0;
 	user-select: none;
 
+	@include w1024h600 {
+
+		margin: 10px 0;
+
+	}
+
 	&__head {
 
 		display: flex;
@@ -281,6 +287,12 @@ legend {
 
 		}
 
+		@include w1024h600 {
+
+			margin-bottom: 8px;
+
+		}
+
 	}
 
 	&__input:checked + &__head::before {
@@ -321,6 +333,13 @@ legend {
 
 		}
 
+		@include w1024h600 {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__price {
@@ -348,6 +367,12 @@ legend {
 		line-height: 24px;
 
 		@include w1440 {
+
+			font-size: 14px;
+
+		}
+
+		@include w1024h600 {
 
 			font-size: 14px;
 

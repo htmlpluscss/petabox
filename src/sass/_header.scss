@@ -39,6 +39,17 @@
 
 		}
 
+		@include w1024h600 {
+
+			img {
+
+				width: 123px;
+				height: 24px;
+
+			}
+
+		}
+
 	}
 
 }
