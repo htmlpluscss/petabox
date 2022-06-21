@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: center;
 	padding: var(--indent);
-	backdrop-filter: blur(10px);
+	/* backdrop-filter: blur(10px); */
 
 	@include w1024 {
 
@@ -95,7 +95,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			content: '';
+			/* content: ''; */
 			z-index: 9;
 			opacity: .3;
 			background-color: var(--color);
