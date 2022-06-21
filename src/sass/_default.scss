@@ -162,13 +162,7 @@ hr {
 		background-position: 100% 100%;
 		background-repeat: no-repeat;
 		background-size: auto 100%;
-		padding: var(--indent) 0 90px;
-
-		@include w1440h1024 {
-
-			padding-bottom: 80px;
-
-		}
+		padding: var(--indent) 0 80px;
 
 		@include w1024h600 {
 
