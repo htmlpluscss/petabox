@@ -50,6 +50,8 @@
 		border-radius: 50%;
 		text-align: center;
 		background-color: var(--blue);
+		list-style: none;
+		position: relative;
 
 		@include w1440 {
 

@@ -1,96 +1,24 @@
+/* begin: такое у вас должно быть */
+
 * {
 
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: red !important; */
-}
-
-html {
-
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	scroll-behavior: smooth;
-
-	&.scroll-behavior-off {
-
-		scroll-behavior: auto;
-
-	}
-
-}
-
-body {
-
-	min-width: 320px;
-	color: var(--color);
-	font-family: 'Source Sans Pro', sans-serif;
-	-webkit-text-size-adjust: none;
-	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: scrollbar;
-	display: flex;
-	flex-grow: 1;
-	flex-direction: column;
-	overflow-y: scroll;
-	position: relative;
-	background-color: var(--bg);
-background-position: top;
-/* background-image: url(/sass/3.png); */
-}
-
-a {
-
-	color: var(--color);
-	text-decoration: none;
-
-	&:hover {
-
-		cursor: pointer;
-		text-decoration: none;
-
-	}
-
-}
-
-::selection {
-
-	color: #fff;
-	background-color: var(--pink);
 
 }
 
 img {
 
 	border: 0;
-	display: block;
-	position: relative;
 
 }
 
-svg {
+/* end: такое у вас должно быть */
 
-	display: block;
-	position: relative;
-	fill: var(--blue);
-	transition: var(--transitionDefault);
 
-}
 
-li {
-
-	list-style: none;
-	position: relative;
-
-}
-
-hr {
-
-	border: 0;
-	height: 1px;
-	background-color: var(--border);
-
-}
+/* .h1 и .h2 при необходимости можн отказаться */
 
 .h1 {
 
@@ -147,6 +75,7 @@ hr {
 
 /*
 -----------------------------------------------------------------------------*/
+
 .main {
 
 	flex-shrink: 0;
@@ -212,18 +141,9 @@ hr {
 
 }
 
-.wrapper {
 
-	flex-shrink: 0;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
+/* .hide и .visuallyhidden при необходимости можн отказаться */
 
-}
-
-
-/* hidden
------------------------------------------------------------------------------*/
 .hide {
 
 	display: none !important;
@@ -242,17 +162,5 @@ hr {
 
 	clip: rect(0 0 0 0) !important;
 	overflow: hidden !important;
-
-}
-
-.nowrap {
-
-	white-space: nowrap;
-
-}
-
-.color-green {
-
-	color: var(--green);
 
 }

@@ -1,30 +1,3 @@
-fieldset {
-
-	border: 0;
-	min-width: 0;
-	display: block;
-	position: relative;
-
-	&:focus {
-
-		outline: none;
-
-	}
-
-}
-
-legend {
-
-	display: table;
-
-	&:focus {
-
-		outline: none;
-
-	}
-
-}
-
 .btn,
 .button {
 
@@ -43,6 +16,7 @@ legend {
 	cursor: pointer;
 	display: block;
 	flex-shrink: 0;
+	text-decoration: none;
 
 	&:hover {
 
@@ -118,6 +92,7 @@ legend {
 
 		svg {
 
+			fill: var(--blue);
 			margin-left: 8px;
 
 		}
