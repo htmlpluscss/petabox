@@ -43,7 +43,7 @@ const w3cjs            = require('gulp-w3cjs');
 
 let config             = null;
 
-const site             = 'petabox.dev';
+const site             = 'petabox.io';
 const domain           = 'petabox-onboarding.htmlpluscss.website';
 
 try {

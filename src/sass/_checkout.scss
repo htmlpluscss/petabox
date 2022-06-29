@@ -158,7 +158,15 @@
 		@include w1440h1024 {
 
 			min-height: 72px;
-			margin-bottom: 0;
+			font-size: 20px;
+			line-height: 2;
+
+		}
+
+		@include w1024h600 {
+
+			font-size: 20px;
+			line-height: 2;
 
 		}
 
